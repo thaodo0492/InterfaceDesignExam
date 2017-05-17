@@ -131,23 +131,72 @@ body {
   border-radius: 5px;
   margin: 6px; }
 
+.eventImg {
+  height: 200px;
+  width: 300px;
+  background-color: red;
+  border-radius: 5px 5px 0 0; }
+
 .testDivContainer h1 {
   text-align: center; }
 
 #imgVesterbro {
   background: url(images/Vesterbro.jpg);
   background-size: cover;
-  background-position: 0; }
+  background-position: center; }
 
 #imgNorrebro {
   background: url(images/Norrebro.jpg);
   background-size: cover;
-  background-position: 0; }
+  background-position: center; }
 
 #imgOsterbro {
   background: url(images/Osterbro.jpg);
   background-size: cover;
-  background-position: 0; }
+  background-position: center; }
+
+#imgBackend {
+  background: url(images/Backend.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.eventPreviewDetails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 300px;
+  border-radius: 0 0 5px 5px; }
+
+.eventPreviewDetails a {
+  line-height: 2; }
+
+.eventPreviewDetails > a {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #222222;
+  color: white;
+  border-radius: 5px;
+  line-height: 1.4;
+  margin: 6px; }
+
+.eventPreviewDetailsColumnL {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 46%;
+  padding: 4px; }
+
+/*.eventPreviewDetailsColumnL a:last-child {
+    font-weight: 600;
+}*/
+.eventPreviewDetailsColumnR {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  background-color: white;
+  width: 46%;
+  padding: 4px; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
