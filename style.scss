@@ -241,10 +241,19 @@ body {
     min-height: 150px;
 }
 
+.partnerDivInnerContainer > div:first-child {
+    background: #e9e9e9;
+}
 
-.partnerIcon {
+.partnerIconP {
     height: 200px;
     width: 200px;
+    margin: 20px;
+}
+
+.partnerIcon {
+    height: 100px;
+    width: 100px;
     margin: 20px;
 }
 
@@ -253,7 +262,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: white;
+    //background-color: white;
 }
 
 #partnerElgiganten {
@@ -261,9 +270,16 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: white;
+    //background-color: white;
 }
 
+#partnerKk {
+    background: url(images/Kk.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-color: white;
+}
 
 //--------------------MEDIA Q--------------------
 

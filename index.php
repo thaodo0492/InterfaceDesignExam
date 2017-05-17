@@ -141,8 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="partnerDiv">
-            <h1>Our partners</h1>
+        <div class="partnerDiv">   
             <div class="partnerDivInnerContainer">
                 <?php
                 include('partners.php');
