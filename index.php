@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="testDivContainer">
-            <h1>List of events</h1>
+            <h1 class="disable-select">List of events</h1>
             <div class="content testDivInnerContainer">
                 <div class="eventDiv">
                 <div id="imgBackend" class="eventImg">
@@ -131,10 +131,10 @@
                             <a>Seats available:</a>
                         </div>
                         <div class="eventPreviewDetailsColumnR">
-                            <a>PHP Course</a>
-                            <a>18/06</a>
-                            <a>16:00-19:00</a>
-                            <a>48</a>
+                            <a>iOS 10</a>
+                            <a>8/07</a>
+                            <a>10:00-19:00</a>
+                            <a>52</a>
                         </div>
                         <a class="pointer">DETAILS</a>
                     </div>
@@ -148,6 +148,9 @@
                 <div class="testDiv"></div>
                 <div class="testDiv"></div>
             </div>
+                <?php
+                include('/partners.php');
+                ?>
         </div>
         
     </div>
