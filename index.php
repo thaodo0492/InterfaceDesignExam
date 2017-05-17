@@ -141,16 +141,14 @@
                 </div>
             </div>
         </div>
-        <div class="testDivContainer">
+        <div class="partnerDiv">
             <h1>Our partners</h1>
-            <div class="content testDivInnerContainer">
-                <div class="testDiv"></div>
-                <div class="testDiv"></div>
-                <div class="testDiv"></div>
-            </div>
+            <div class="partnerDivInnerContainer">
                 <?php
-                include('/partners.php');
+                include('partners.php');
                 ?>
+            </div>
+
         </div>
         
     </div>

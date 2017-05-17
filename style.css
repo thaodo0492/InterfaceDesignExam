@@ -221,6 +221,40 @@ body {
   width: 46%;
   padding: 4px; }
 
+.partnerDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 150px;
+  flex-direction: column;
+  text-align: center; }
+
+.partnerDivInnerContainer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 150px; }
+
+.partnerIcon {
+  height: 200px;
+  width: 200px;
+  margin: 20px; }
+
+#partnerDanskebank {
+  background: url(images/Danskebank.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white; }
+
+#partnerElgiganten {
+  background: url(images/Elgiganten.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white; }
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
