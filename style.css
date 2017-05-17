@@ -1,3 +1,50 @@
+/**
+* SassFlexbox
+* Manage Flexbox in Sass easily.
+*
+* @author     Samuel Marchal (zessx)
+* @version    0.1
+*/
+/*
+    Display
+ */
+@import url(styleLib.css);
+/*
+    Flex direction
+ */
+/*
+    Flex wrap
+ */
+/*
+    Flex flow
+ */
+/*
+    Order
+ */
+/*
+    Flex grow
+ */
+/*
+    Flex shrink
+ */
+/*
+    Flex basis
+ */
+/*
+    Flex
+ */
+/*
+    Justify content
+ */
+/*
+    Align items
+ */
+/*
+    Align self
+ */
+/*
+    Align content
+ */
 body {
   margin: 0;
   padding: 0;
@@ -173,6 +220,17 @@ body {
   background-color: white;
   width: 46%;
   padding: 4px; }
+
+#aboutImage {
+  background: url(images/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 500px; }
+
+.clip-me {
+  clip-path: inset(10px 20px 30px 40px);
+  /* values are from-top, from-right, from-bottom, from-left */ }
 
 .partnerContainer {
   display: flex;

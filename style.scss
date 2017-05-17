@@ -1,3 +1,7 @@
+@import 'helpers/sass-flexbox.scss';
+@import 'helpers/mixins.scss';
+@import 'helpers/_media-queries.scss';
+@import 'styleLib.css';
 //--------------------BODY--------------------
 body {
     margin: 0;
@@ -218,6 +222,20 @@ body {
     background-color: white;
     width: 46%;
     padding: 4px;
+}
+
+//--------------------ABOUT----------------------
+#aboutImage {
+    background: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    height: 500px;
+}
+
+.clip-me {
+    clip-path: inset(10px 20px 30px 40px);
+    /* values are from-top, from-right, from-bottom, from-left */
 }
 
 //--------------------PARTNERS--------------------
