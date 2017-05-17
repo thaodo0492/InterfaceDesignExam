@@ -74,8 +74,8 @@
                             <a>Seats available:</a>
                         </div>
                         <div class="eventPreviewDetailsColumnR">
-                            <a>PHP Course</a>
-                            <a>18/06</a>
+                            <a>Android OS</a>
+                            <a>25/06</a>
                             <a>16:00-19:00</a>
                             <a>48</a>
                         </div>
@@ -96,13 +96,13 @@
                             <a>MySql Security</a>
                             <a>28/06</a>
                             <a>13:00-15:00</a>
-                            <a>48</a>
+                            <a>26</a>
                         </div>
                         <a class="pointer">DETAILS</a>
                     </div>
                 </div>
                 <div class="eventDiv">
-                <div id="imgOs" class="eventImg">
+                <div id="imgBackend" class="eventImg">
                 </div>
                     <div class="eventPreviewDetails">
                         <div class="eventPreviewDetailsColumnL">
@@ -112,10 +112,10 @@
                             <a>Seats available:</a>
                         </div>
                         <div class="eventPreviewDetailsColumnR">
-                            <a>PHP Course</a>
-                            <a>18/06</a>
-                            <a>16:00-19:00</a>
-                            <a>48</a>
+                            <a>CMS</a>
+                            <a>02/07</a>
+                            <a>18:00-22:00</a>
+                            <a>23</a>
                         </div>
                         <a class="pointer">DETAILS</a>
                     </div>
