@@ -25,25 +25,120 @@
         <div class="testDivContainer">
             <h1>List of events</h1>
             <div class="content testDivInnerContainer">
-                <div>
+                <div class="eventDiv">
                 <div id="imgBackend" class="eventImg">
                 </div>
                     <div class="eventPreviewDetails">
                         <div class="eventPreviewDetailsColumnL">
                             <a>Title:</a>
+                            <a>Date:</a>
                             <a>Time:</a>
                             <a>Seats available:</a>
                         </div>
                         <div class="eventPreviewDetailsColumnR">
                             <a>PHP Course</a>
-                            <a>18/06 - kl.16:00</a>
+                            <a>18/06</a>
+                            <a>16:00-19:00</a>
                             <a>48</a>
                         </div>
                         <a class="pointer">DETAILS</a>
                     </div>
                 </div>
-                <div class="eventImg"></div>
-                <div class="eventImg"></div>
+                <div class="eventDiv">
+                <div id="imgFrontend" class="eventImg">
+                </div>
+                    <div class="eventPreviewDetails">
+                        <div class="eventPreviewDetailsColumnL">
+                            <a>Title:</a>
+                            <a>Date:</a>
+                            <a>Time:</a>
+                            <a>Seats available:</a>
+                        </div>
+                        <div class="eventPreviewDetailsColumnR">
+                            <a>The future of CSS</a>
+                            <a>21/06</a>
+                            <a>11:00-13:50</a>
+                            <a>35</a>
+                        </div>
+                        <a class="pointer">DETAILS</a>
+                    </div>
+                </div>
+                <div class="eventDiv">
+                <div id="imgOs" class="eventImg">
+                </div>
+                    <div class="eventPreviewDetails">
+                        <div class="eventPreviewDetailsColumnL">
+                            <a>Title:</a>
+                            <a>Date:</a>
+                            <a>Time:</a>
+                            <a>Seats available:</a>
+                        </div>
+                        <div class="eventPreviewDetailsColumnR">
+                            <a>PHP Course</a>
+                            <a>18/06</a>
+                            <a>16:00-19:00</a>
+                            <a>48</a>
+                        </div>
+                        <a class="pointer">DETAILS</a>
+                    </div>
+                </div>
+                <div class="eventDiv">
+                <div id="imgDatabase" class="eventImg">
+                </div>
+                    <div class="eventPreviewDetails">
+                        <div class="eventPreviewDetailsColumnL">
+                            <a>Title:</a>
+                            <a>Date:</a>
+                            <a>Time:</a>
+                            <a>Seats available:</a>
+                        </div>
+                        <div class="eventPreviewDetailsColumnR">
+                            <a>MySql Security</a>
+                            <a>28/06</a>
+                            <a>13:00-15:00</a>
+                            <a>48</a>
+                        </div>
+                        <a class="pointer">DETAILS</a>
+                    </div>
+                </div>
+                <div class="eventDiv">
+                <div id="imgOs" class="eventImg">
+                </div>
+                    <div class="eventPreviewDetails">
+                        <div class="eventPreviewDetailsColumnL">
+                            <a>Title:</a>
+                            <a>Date:</a>
+                            <a>Time:</a>
+                            <a>Seats available:</a>
+                        </div>
+                        <div class="eventPreviewDetailsColumnR">
+                            <a>PHP Course</a>
+                            <a>18/06</a>
+                            <a>16:00-19:00</a>
+                            <a>48</a>
+                        </div>
+                        <a class="pointer">DETAILS</a>
+                    </div>
+                </div>
+                <div class="eventDiv">
+                <div id="imgOs" class="eventImg">
+                </div>
+                    <div class="eventPreviewDetails">
+                        <div class="eventPreviewDetailsColumnL">
+                            <a>Title:</a>
+                            <a>Date:</a>
+                            <a>Time:</a>
+                            <a>Seats available:</a>
+                        </div>
+                        <div class="eventPreviewDetailsColumnR">
+                            <a>PHP Course</a>
+                            <a>18/06</a>
+                            <a>16:00-19:00</a>
+                            <a>48</a>
+                        </div>
+                        <a class="pointer">DETAILS</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="testDivContainer">

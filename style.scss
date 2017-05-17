@@ -94,7 +94,8 @@ body {
 
 .testDivInnerContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     min-height: 150px;
 }
 
@@ -111,7 +112,12 @@ body {
     width: 300px;
     background-color: red;
     border-radius: 5px;
-    margin: 6px;
+    //margin: 6px;
+    margin: 2%;
+}
+
+.eventDiv {
+    margin: 2%;
 }
 
 .eventImg {
@@ -147,6 +153,28 @@ body {
     background: url(images/Backend.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#imgFrontend {
+    background: url(images/Frontend.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#imgOs {
+    background: url(images/Os.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+#imgDatabase {
+    background: url(images/Database.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
 }
 
 .eventPreviewDetails {
