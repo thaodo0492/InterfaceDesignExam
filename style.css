@@ -50,9 +50,10 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
-#content {
+.content {
   max-width: 1200px;
-  margin: 20px; }
+  margin: 20px;
+  margin: 20px auto; }
 
 /* Add a black background color to the top navigation */
 .topnavContainer {
@@ -110,8 +111,18 @@ body {
   display: none; }
 
 .testDivContainer {
+  padding: 20px; }
+
+.testDivInnerContainer {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-height: 150px; }
+
+.testDivContainer:nth-child(2n) {
+  background-color: #222; }
+
+.testDivContainer:nth-child(2n) h1 {
+  color: white; }
 
 .testDiv {
   height: 200px;
@@ -119,6 +130,21 @@ body {
   background-color: red;
   border-radius: 5px;
   margin: 6px; }
+
+.testDivContainer h1 {
+  text-align: center; }
+
+#imgVesterbro {
+  background: url(images/Vesterbro.jpg);
+  background-size: cover; }
+
+#imgNorrebro {
+  background: url(images/Norrebro.jpg);
+  background-size: cover; }
+
+#imgOsterbro {
+  background: url(images/Osterbro.jpg);
+  background-size: cover; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {

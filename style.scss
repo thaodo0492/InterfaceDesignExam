@@ -4,16 +4,17 @@
 @import 'styleLib.css';
 
 //--------------------BODY--------------------
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-
-#content {
+.content {
     max-width: 1200px;
     margin: 20px;
+    margin: 20px auto;
 }
 
 
@@ -88,9 +89,21 @@ body {
 //--------------------INDEX--------------------
 
 .testDivContainer {
+    padding: 20px;
+}
+
+.testDivInnerContainer {
     display: flex;
     justify-content: space-between;
-    
+    min-height: 150px;
+}
+
+.testDivContainer:nth-child(2n) {
+    background-color: #222;
+}
+
+.testDivContainer:nth-child(2n) h1 {
+    color: white;
 }
 
 .testDiv {
@@ -101,7 +114,24 @@ body {
     margin: 6px;
 }
 
+.testDivContainer h1 {
+    text-align: center;
+}
 
+#imgVesterbro {
+    background: url(images/Vesterbro.jpg);
+    background-size: cover;
+}
+
+#imgNorrebro {
+    background: url(images/Norrebro.jpg);
+    background-size: cover;
+}
+
+#imgOsterbro {
+    background: url(images/Osterbro.jpg);
+    background-size: cover;
+}
 
 
 //--------------------MEDIA Q--------------------
