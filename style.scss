@@ -285,7 +285,7 @@ button.accordion.active:after {
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.9s ease-out;
     p {
         text-align: center;
         max-width: 900px;
@@ -299,7 +299,7 @@ button.accordion.active:after {
     flex-direction: column;
 }
 
-#offers {
+.offers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -367,8 +367,17 @@ button.accordion.active:after {
     margin-bottom: 13px;
 }
 
-#symbol {
+.symbol {
     font-size: 20px;
+}
+
+#mapblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 20px;
+    }
 }
 
 //--------------------PARTNERS--------------------
@@ -435,9 +444,7 @@ button.accordion.active:after {
     //background-color: white;
 }
 
-
 //--------------------PARTNERS--------------------
-
 #questionsDiv {
     text-align: center;
     padding: 20px;
@@ -461,7 +468,6 @@ button.accordion.active:after {
     /* color: white; */
     background-color: #dddddd;
 }
-
 
 //--------------------MEDIA Q--------------------
 

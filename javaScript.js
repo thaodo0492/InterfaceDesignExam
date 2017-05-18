@@ -2,8 +2,10 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    console.log('x');
     acc[i].onclick = function () {
+
+        var id = this.id;
+
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
@@ -11,11 +13,13 @@ for (i = 0; i < acc.length; i++) {
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
+
+        $('html, body').animate({
+            scrollTop: $('#' + id).offset().top
+        }, 900);
     }
+
 }
-
-
-
 
 /* Adding and removing the "responsive" class to topnav on click */
 function TopnavOpen() {
