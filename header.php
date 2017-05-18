@@ -4,11 +4,11 @@
 <div class="topnavContainer p-sides-50">
     <div class="topnavInnerContainer">
         <div class="topnav" id="myTopnav">
-            <a id="navLogo"><img class="pointer" src="images/logo.png" alt="facebook logo" height="30" width="auto"></a>
-            <a href="#home">Events</a>
-            <a href="#news">Partners</a>
-            <a href="#contact">About</a>
-            <a href="#about">FAQ</a>
+            <a href="index" id="navLogo"><img class="pointer" src="images/logo.png" alt="facebook logo" height="30" width="auto"></a>
+            <a href="events">Events</a>
+            <a href="partners">Partners</a>
+            <a href="about">About</a>
+            <a href="faq">FAQ</a>
             <a href="javascript:void(0);" class="icon" onclick="TopnavOpen()">&#9776;</a>
         </div>
         <div>
