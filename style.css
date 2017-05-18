@@ -221,6 +221,17 @@ body {
   width: 46%;
   padding: 4px; }
 
+#aboutImage {
+  background: url(images/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 500px; }
+
+.clip-me {
+  clip-path: inset(10px 20px 30px 40px);
+  /* values are from-top, from-right, from-bottom, from-left */ }
+
 .partnerContainer {
   display: flex;
   justify-content: center;
