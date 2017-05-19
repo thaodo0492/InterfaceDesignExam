@@ -48,6 +48,11 @@
                     </select>
                 </div>
             </div>
+
+
+
+
+
             <div class="testDivContainer">
                 <h1>List of events</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
@@ -175,20 +180,23 @@
                 </div>
             </div>
         </div>
+        <?php
+            include('footer.php');
+        ?>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="js/jquery.dropdown.js"></script>
-        <script type="text/javascript">
-            $(function() {
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+            <script type="text/javascript">
+                $(function() {
 
-                $('#cd-dropdown').dropdown();
-                $('#cd-dropdown1').dropdown();
-                $('#cd-dropdown2').dropdown();
-                $('#cd-dropdown3').dropdown();
+                    $('#cd-dropdown').dropdown();
+                    $('#cd-dropdown1').dropdown();
+                    $('#cd-dropdown2').dropdown();
+                    $('#cd-dropdown3').dropdown();
 
-            });
+                });
 
-        </script>
+            </script>
 
 </body>
 

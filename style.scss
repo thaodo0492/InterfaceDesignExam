@@ -11,9 +11,12 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 .content {
@@ -366,6 +369,7 @@ button.accordion.active:after {
     margin: 2%;
     border: 1px solid #ccc;
     margin-bottom: 50px;
+    min-width: 200px;
 }
 
 .offerIcons:hover {
@@ -567,16 +571,12 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
-<<<<<<< HEAD
-
-//--------------------SINGLE EVENT--------------------
-
+//-------------------SINGLE EVENT-------------------- 
 #singleEventDiv {
     min-height: 150px;
     display: flex;
     justify-content: center;
 }
-
 
 .eventDetails {
     display: flex;
@@ -625,10 +625,7 @@ button.accordion.active:after {
     background-color: rgba(115, 215, 232, 0.36)
 }
 
-
-=======
->>>>>>> origin/master
-//--------------------FOOTER--------------------
+//--------------------FOOTER-------------------- 
 footer {
     display: flex!important;
     justify-content: center;
@@ -712,24 +709,18 @@ footer p {
 
 /*******************EVENTS**********************/
 
-#filter {
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-        margin-top: 50px;
-        font-size: 20px;
-        color: #444;
-    }
+#filter h1 {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
 }
 
 #filterbuttons {
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px;
-    flex-direction: row;
-    width: 1200px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
