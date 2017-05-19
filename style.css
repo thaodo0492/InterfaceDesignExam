@@ -404,7 +404,8 @@ button.accordion.active:after {
 #map {
   width: 90vw;
   overflow: auto;
-  margin: 50px auto; }
+  margin: 50px auto;
+  max-width: 1200px; }
 
 #map iframe {
   width: 100%; }
@@ -508,7 +509,9 @@ button.accordion.active:after {
 #singleEventDiv {
   min-height: 150px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: solid 1px #ddd;
+  padding: 20px; }
 
 .eventDetails {
   display: flex;
@@ -530,7 +533,9 @@ button.accordion.active:after {
   background-position: center;
   height: 50px;
   width: 100%;
-  background-color: rgba(115, 215, 232, 0.36); }
+  background-color: #ddd;
+  border: white solid 1px;
+  border-radius: 4px; }
 
 #eventDivLeft {
   display: flex;
@@ -549,7 +554,9 @@ button.accordion.active:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(115, 215, 232, 0.36); }
+  background-color: #ddd;
+  border: white solid 1px;
+  border-radius: 4px; }
 
 footer {
   display: flex !important;

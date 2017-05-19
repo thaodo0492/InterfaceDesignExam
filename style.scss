@@ -442,6 +442,7 @@ button.accordion.active:after {
     width: 90vw;
     overflow: auto;
     margin: 50px auto;
+    max-width: 1200px;
 }
 
 #map iframe {
@@ -580,6 +581,8 @@ button.accordion.active:after {
     min-height: 150px;
     display: flex;
     justify-content: center;
+    border-bottom: solid 1px #ddd;
+    padding: 20px;
 }
 
 
@@ -605,7 +608,9 @@ button.accordion.active:after {
     background-position: center;
     height: 50px;
     width: 100%;
-    background-color: rgba(115, 215, 232, 0.36)
+    background-color: #ddd;
+    border: white solid 1px;
+    border-radius: 4px;
 }
 
 #eventDivLeft {
@@ -627,7 +632,9 @@ button.accordion.active:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(115, 215, 232, 0.36)
+    background-color: #ddd;
+    border: white solid 1px;
+    border-radius: 4px;
 }
 
 

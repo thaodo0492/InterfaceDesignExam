@@ -18,7 +18,7 @@
     <div id="singleEventContainer">
         <div id="singleEventDiv" class="content">
             <div id="eventDivLeft">
-            <div id="imgFrontend" class="testDiv pointer">
+            <div id="imgFrontend" class="testDiv pointer" style="height: 300px!important; width: 400px!important;">
             </div>
             <div id="imgFBshare" class="shareImg pointer"></div>
             </div>
