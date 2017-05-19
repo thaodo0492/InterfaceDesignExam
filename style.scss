@@ -1,10 +1,15 @@
 @import 'helpers/sass-flexbox.scss';
 @import 'helpers/mixins.scss';
 @import 'helpers/_media-queries.scss';
-@import url('demo.css');
-@import url('common.css');
-@import url('icons.css');
 //--------------------BODY--------------------
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -21,11 +26,12 @@ body {
 }
 
 .disable-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default; }
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
 
 .margin-0-auto {
     margin: 0px auto;
@@ -36,11 +42,11 @@ body {
 }
 
 .p-sides-50 {
-  padding: 0 50px;
+    padding: 0 50px;
 }
 
 .m-sides-8 {
-  margin: 0 8px;
+    margin: 0 8px;
 }
 
 //--------------------HEADER--------------------
@@ -437,11 +443,9 @@ button.accordion.active:after {
     margin-top: 50px;
 }
 
-
 //--------------------PARTNERS--------------------
-
 #partnerContactDiv {
-        text-align: center;
+    text-align: center;
     background-color: #dddddd;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -458,12 +462,11 @@ button.accordion.active:after {
     width: 100%;
     margin-bottom: 40px;
 }
-    
+
 #contactBtn {
     margin: 30px;
     cursor: pointer;
 }
-
 
 //--------------------SHOW PARTNERS--------------------
 .partnerContainer {
@@ -540,7 +543,6 @@ button.accordion.active:after {
 }
 
 //--------------------PARTNERS--------------------
-
 #questionsDiv {
     text-align: center;
     padding: 20px;
@@ -565,6 +567,7 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
+<<<<<<< HEAD
 
 //--------------------SINGLE EVENT--------------------
 
@@ -623,8 +626,9 @@ button.accordion.active:after {
 }
 
 
+=======
+>>>>>>> origin/master
 //--------------------FOOTER--------------------
-
 footer {
     display: flex!important;
     justify-content: center;
@@ -706,7 +710,115 @@ footer p {
 }
 
 
-/*****************************************/
+/*******************EVENTS**********************/
+
+#filter {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin-top: 50px;
+        font-size: 20px;
+        color: #444;
+    }
+}
+
+#filterbuttons {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: center;
+}
+
+
+/*******************DROP DOWN BUTTONS**********************/
+
+.cd-dropdown,
+.cd-select {
+    position: relative;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ddd;
+    margin: 3%;
+}
+
+.cd-dropdown>span {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    font-weight: 700;
+    font-size: 16px;
+    background: #fff;
+    display: block;
+    padding: 0 50px 0 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cd-dropdown>span:after {
+    content: '\25BC';
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    width: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    height: 70%;
+    line-height: 24px;
+    border-left: 1px solid #ddd;
+}
+
+.cd-dropdown.cd-active>span:after {
+    content: '\25B2';
+}
+
+.cd-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.cd-dropdown ul li {
+    display: block;
+}
+
+.cd-dropdown ul li span {
+    width: 100%;
+    background: #fff;
+    line-height: 60px;
+    padding: 0 30px 0 75px;
+    display: block;
+    color: #bcbcbc;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cd-dropdown>span,
+.cd-dropdown ul li span {
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cd-dropdown>span span[class^="icon-"],
+.cd-dropdown>span span[class*=" icon-"] {
+    padding: 0 30px 0 45px;
+}
+
+
+/* Select fallback styling */
 
 .cd-dropdown {
     -webkit-perspective: 800px;

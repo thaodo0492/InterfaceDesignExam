@@ -15,10 +15,6 @@
     ?>
         <div>
             <div id="aboutImage" class="margin-0-auto">
-                <!--
-<h1 class="text-welcome margin-0-auto">welcome to Tech event</h1>
-<h2 class="midde-text margin-0-auto"> IT'S VERY NICE TO MEET YOU ! </h2>
--->
             </div>
             <div>
                 <h1 class="text-about-title margin-0-auto">Welcome to Tech event</h1>

@@ -11,58 +11,184 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Codrops top bar -->
-        <div class="codrops-top clearfix">
-            <a href="http://tympanus.net/Development/Calendario/">
-                <strong>&laquo; Previous Demo: </strong>Flexible Calendar Plugin
-            </a>
-            <span class="right">
-					<a href="http://icomoon.io/app/">Icons created with Icomoon</a>
-					<a href="http://tympanus.net/codrops/?p=12452">
-						<strong>Back to the Codrops Article</strong>
-					</a>
-				</span>
+    <?php
+    include('/header.php');
+    ?>
+        <div>
+            <div id="filter">
+                <h1>PLEASE OPTIMIZE YOUR SEARCH HERE</h1>
+                <div id="filterbuttons">
+                    <select id="cd-dropdown" class="cd-select">
+                        <option value="-1" selected>Pick an</option>
+                        <option value="1">Linux</option>
+                        <option value="2">Mac</option>
+                        <option value="3">Windows</option>
+                        <option value="4">Android</option>
+                        </select>
+                    <select id="cd-dropdown1" class="cd-select">
+                    <option value="-1" selected>Pick an</option>
+                    <option value="1">Linux</option>
+                    <option value="2">Mac</option>
+                    <option value="3">Windows</option>
+                    <option value="4">Android</option>
+                    </select>
+                    <select id="cd-dropdown2" class="cd-select">
+                    <option value="-1" selected>Pick an</option>
+                    <option value="1">Linux</option>
+                    <option value="2">Mac</option>
+                    <option value="3">Windows</option>
+                    <option value="4">Android</option>
+                    </select>
+                    <select id="cd-dropdown3" class="cd-select">
+                    <option value="-1" selected>Pick an</option>
+                    <option value="1">Linux</option>
+                    <option value="2">Mac</option>
+                    <option value="3">Windows</option>
+                    <option value="4">Android</option>
+                    </select>
+                </div>
+            </div>
+            <div class="testDivContainer">
+                <h1>List of events</h1>
+                <div class="content margin-20-auto testDivInnerContainer">
+                    <div class="eventDiv">
+                        <div id="imgBackend" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>PHP Course</a>
+                                <a>18/06</a>
+                                <a>16:00-19:00</a>
+                                <a>48</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="eventDiv">
+                        <div id="imgFrontend" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>The future of CSS</a>
+                                <a>21/06</a>
+                                <a>11:00-13:50</a>
+                                <a>35</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="eventDiv">
+                        <div id="imgOs" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>Android OS</a>
+                                <a>25/06</a>
+                                <a>16:00-19:00</a>
+                                <a>48</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="eventDiv">
+                        <div id="imgDatabase" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>MySql Security</a>
+                                <a>28/06</a>
+                                <a>13:00-15:00</a>
+                                <a>26</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="eventDiv">
+                        <div id="imgBackend" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>CMS</a>
+                                <a>02/07</a>
+                                <a>18:00-22:00</a>
+                                <a>23</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="eventDiv">
+                        <div id="imgOs" class="eventImg">
+                        </div>
+                        <div class="eventPreviewDetails">
+                            <div class="eventPreviewDetailsColumnL">
+                                <a>Title:</a>
+                                <a>Date:</a>
+                                <a>Time:</a>
+                                <a>Seats available:</a>
+                            </div>
+                            <div class="eventPreviewDetailsColumnR">
+                                <a>iOS 10</a>
+                                <a>8/07</a>
+                                <a>10:00-19:00</a>
+                                <a>52</a>
+                            </div>
+                            <a class="pointer">DETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partnerContainer">
+                <div class="partnerDivInnerContainer">
+                    <?php
+                include('showPartners.php');
+                ?>
+                </div>
+            </div>
         </div>
-        <!--/ Codrops top bar -->
-        <header class="clearfix">
-            <h1>Simple Effects<span>for Drop-Down Lists</span></h1>
-            <nav class="codrops-demos">
-                <a href="index.html">Demo 1</a>
-                <a href="index2.html">Demo 2</a>
-                <a href="index3.html">Demo 3</a>
-                <a class="current-demo" href="index4.html">Demo 4</a>
-                <a href="index5.html">Demo 5</a>
-                <a href="index6.html">Demo 6</a>
-            </nav>
-        </header>
-        <section class="main clearfix">
-            <div class="fleft">
-                <p>Try holding down the mouse on the drop-down label.</p>
-                <p>In this example we use a gutter of 0 (default), stack the items with a slight offset, and rotate the select label while clicking it. The effect will only be visible for browsers supporting 3D transforms.</p>
-            </div>
-            <div class="fleft">
-                <select id="cd-dropdown" class="cd-select">
-						<option value="-1" selected>Pick an operating system</option>
-						<option value="1" class="icon-tux">Linux</option>
-						<option value="2" class="icon-finder">Mac</option>
-						<option value="3" class="icon-windows">Windows</option>
-						<option value="4" class="icon-android">Android</option>
-					</select>
-            </div>
-        </section>
-    </div>
-    <!-- /container -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.dropdown.js"></script>
-    <script type="text/javascript">
-        $(function() {
 
-            $('#cd-dropdown').dropdown();
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+        <script type="text/javascript">
+            $(function() {
 
-        });
+                $('#cd-dropdown').dropdown();
+                $('#cd-dropdown1').dropdown();
+                $('#cd-dropdown2').dropdown();
+                $('#cd-dropdown3').dropdown();
 
-    </script>
+            });
+
+        </script>
 
 </body>
 
