@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<<<<<<< HEAD
 <html>
 
 <head>
@@ -24,8 +23,7 @@
     </div>
 </body>
 </html>
-=======
-?>
+
 <div id="partnerPDiv">
     <h1 class="disable-select">Our partners</h1>
     <div class="content margin-20-auto">
