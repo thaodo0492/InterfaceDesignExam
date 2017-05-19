@@ -4,6 +4,7 @@
 
 <head>
     <title>Partners</title>
+    <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <script src="javaScript.js"></script>
 </head>
