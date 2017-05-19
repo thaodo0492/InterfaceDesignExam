@@ -522,6 +522,7 @@ button.accordion.active:after {
 }
 
 //--------------------PARTNERS--------------------
+
 #questionsDiv {
     text-align: center;
     padding: 20px;
@@ -544,6 +545,20 @@ button.accordion.active:after {
     padding: 10px;
     /* color: white; */
     background-color: #dddddd;
+}
+
+
+//--------------------FOOTER--------------------
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 14px;
+    font-size: 0.9em;
+    color: #f2f2f2;
+    margin-top: 40px;
 }
 
 //--------------------MEDIA Q--------------------
