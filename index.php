@@ -12,7 +12,7 @@
 <body>
 
     <?php
-    include('/header.php');
+        include('/header.php');
     ?>
         <div>
             <div class="testDivContainer">
@@ -42,7 +42,7 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -61,7 +61,7 @@
                                 <a>11:00-13:50</a>
                                 <a>35</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -80,7 +80,7 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -99,7 +99,7 @@
                                 <a>13:00-15:00</a>
                                 <a>26</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -118,7 +118,7 @@
                                 <a>18:00-22:00</a>
                                 <a>23</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -137,7 +137,7 @@
                                 <a>10:00-19:00</a>
                                 <a>52</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
                     </div>
                 </div>

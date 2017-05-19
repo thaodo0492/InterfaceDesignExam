@@ -231,6 +231,7 @@ body {
 
 .eventPreviewDetails a {
     line-height: 2;
+    text-decoration: none;
 }
 
 .eventPreviewDetails>a {
@@ -582,13 +583,9 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
-<<<<<<< HEAD
-//-------------------SINGLE EVENT-------------------- 
-=======
 
 //--------------------SINGLE EVENT--------------------
 
->>>>>>> origin/master
 #singleEventDiv {
     min-height: 150px;
     display: flex;
@@ -648,12 +645,9 @@ button.accordion.active:after {
     border-radius: 4px;
 }
 
-<<<<<<< HEAD
-//--------------------FOOTER-------------------- 
-=======
 
 //--------------------FOOTER--------------------
->>>>>>> origin/master
+
 footer {
     display: flex!important;
     justify-content: center;

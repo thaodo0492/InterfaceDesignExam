@@ -225,7 +225,8 @@ body {
   border-radius: 0 0 5px 5px; }
 
 .eventPreviewDetails a {
-  line-height: 2; }
+  line-height: 2;
+  text-decoration: none; }
 
 .eventPreviewDetails > a {
   margin-top: 20px;
