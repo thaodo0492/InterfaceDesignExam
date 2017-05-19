@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 
-<<<<<<< HEAD
 <html>
 
 <head>
-    <title>Index Page</title>
+    <title>Partners</title>
     <link href="style.css" rel="stylesheet">
     <script src="javaScript.js"></script>
 </head>
@@ -22,22 +21,13 @@
             ?>
         </div>
     </div>
+    <div id="partnerContactDiv">
+        <h1>Be our partner</h1>
+        <!--<button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>-->
+        <a href="" class="button"><span class="symbol" >📧</span>Contact Us</a>
+    </div>
+    <?php
+        include('footer.php');
+    ?>
 </body>
 </html>
-=======
-?>
-<div id="partnerPDiv">
-    <h1 class="disable-select">Our partners</h1>
-    <div class="content margin-20-auto">
-        <div id="partnerDanskebank" class="partnerIconP"></div>
-        <div id="partnerElgiganten" class="partnerIconP"></div>
-    </div>
-</div>
-<div class="content margin-20-auto">
-    <div id="partnerKk" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-    <div id="partnerDanskebank" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-</div>
->>>>>>> origin/master
