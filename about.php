@@ -68,14 +68,15 @@
             <div id="mapblock">
                 <h1>FIND YOUR WAY TO US</h1>
                 <div id="map">
-                    <iframe width="1200" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDThtVQncVO-lgLbScuMNTThJzKKL_Ekyo
-  &q=Fairmont+Empress,Victoria+BC
-  &attribution_source=Google+Maps+Embed+API
-  &attribution_web_url=http://www.fairmont.com/empress-victoria/
-  &attribution_ios_deep_link_id=comgooglemaps://?daddr=Fairmont+Empress,+Victoria,+BC" allowfullscreen>
-                    </iframe>
+                    <iframe width="1200" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDThtVQncVO-lgLbScuMNTThJzKKL_Ekyo&origin=Nørreport&destination=Lygten+37&avoid=tolls|highways" allowfullscreen></iframe>
                 </div>
-
+            </div>
+            <div class="partnerContainer">
+                <div class="partnerDivInnerContainer">
+                    <?php
+                include('partners.php');
+                ?>
+                </div>
             </div>
         </div>
 

@@ -1,3 +1,4 @@
+/**************************ABOUT*****************************/
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -21,6 +22,8 @@ for (i = 0; i < acc.length; i++) {
 
 }
 
+
+/**************************INDEX*****************************/
 /* Adding and removing the "responsive" class to topnav on click */
 function TopnavOpen() {
     var x = document.getElementById("myTopnav");
@@ -30,6 +33,3 @@ function TopnavOpen() {
         x.className = "topnav";
     }
 }
-
-
-/**************************ABOUT*****************************/
