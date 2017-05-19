@@ -19,7 +19,6 @@ for (i = 0; i < acc.length; i++) {
             scrollTop: $('#' + id).offset().top
         }, 900);
     }
-
 }
 
 
@@ -29,7 +28,11 @@ function TopnavOpen() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
+        
+        x.parentNode.className += " alignBase";
     } else {
         x.className = "topnav";
+        
+        x.parentNode.className = "topnavInnerContainer";
     }
 }
