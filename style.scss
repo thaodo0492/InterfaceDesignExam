@@ -26,11 +26,12 @@ body {
 }
 
 .disable-select {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default; }
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
 
 .margin-0-auto {
     margin: 0px auto;
@@ -41,11 +42,11 @@ body {
 }
 
 .p-sides-50 {
-  padding: 0 50px;
+    padding: 0 50px;
 }
 
 .m-sides-8 {
-  margin: 0 8px;
+    margin: 0 8px;
 }
 
 //--------------------HEADER--------------------
@@ -442,11 +443,9 @@ button.accordion.active:after {
     margin-top: 50px;
 }
 
-
 //--------------------PARTNERS--------------------
-
 #partnerContactDiv {
-        text-align: center;
+    text-align: center;
     background-color: #dddddd;
     padding-bottom: 40px;
     padding-top: 20px;
@@ -463,12 +462,11 @@ button.accordion.active:after {
     width: 100%;
     margin-bottom: 40px;
 }
-    
+
 #contactBtn {
     margin: 30px;
     cursor: pointer;
 }
-
 
 //--------------------SHOW PARTNERS--------------------
 .partnerContainer {
@@ -545,7 +543,6 @@ button.accordion.active:after {
 }
 
 //--------------------PARTNERS--------------------
-
 #questionsDiv {
     text-align: center;
     padding: 20px;
@@ -570,9 +567,7 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
-
 //--------------------FOOTER--------------------
-
 footer {
     display: flex!important;
     justify-content: center;
@@ -656,20 +651,25 @@ footer p {
 
 /*******************EVENTS**********************/
 
-#filterbuttons {
+#filter {
+    background-color: cornsilk;
     display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 1200px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin-top: 50px;
+        font-size: 20px;
+        color: #444;
+    }
 }
 
-#text-filter {
-    margin-top: 50px;
-    font-size: 20px;
-    color: #444;
-    text-align: center;
+#filterbuttons {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: center;
 }
 
 
@@ -682,6 +682,7 @@ footer p {
     margin: 20px auto;
     display: block;
     border: 1px solid #ddd;
+    margin: 3%;
 }
 
 .cd-dropdown>span {
