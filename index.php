@@ -145,7 +145,7 @@
             <div class="partnerContainer">
                 <div class="partnerDivInnerContainer">
                     <?php
-                include('partners.php');
+                include('showPartners.php');
                 ?>
                 </div>
 
