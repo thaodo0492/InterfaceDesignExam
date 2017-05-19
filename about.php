@@ -15,7 +15,14 @@
     ?>
         <div>
             <div id="aboutImage" class="margin-0-auto">
-                <h1 class="midde-text margin-0-auto"> Tech is the natural meeting place for everyone passionate about media and technology. Whether you are a creative, architect, programmer, gamester, geek girl or serial entrepreneur, Tech gives you a forum to meet, greet and develop, every day of the year.</h1>
+<!--
+<h1 class="text-welcome margin-0-auto">welcome to Tech event</h1>
+<h2 class="midde-text margin-0-auto"> IT'S VERY NICE TO MEET YOU ! </h2>
+-->
+            </div>
+            <div>
+                <h1 class="text-about-title margin-0-auto">Welcome to Tech event</h1>
+                <h1 class="margin-0-auto text-about">Tech is the natural meeting place for everyone passionate about media and technology. Whether you are a creative, architect, programmer, gamester, geek girl or serial entrepreneur, Tech gives you a forum to meet, greet and develop, every day of the year.Tech is the natural meeting place for everyone passionate about media and technology.programmer, gamester, geek girl.</h1>
             </div>
             <div id="offerblock">
                 <button id="venue" class="accordion">LOOKING FOR AN EVENT VENUE? </button>

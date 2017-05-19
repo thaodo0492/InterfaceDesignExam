@@ -239,19 +239,46 @@ body {
 #aboutImage {
     display: flex;
     align-items: center;
-    background: url(images/4.jpg);
+    flex-direction: column;
+    background: url(images/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
     margin-bottom: 4px;
 }
 
-.midde-text {
+.text-welcome {
     font-size: 20px;
-    color: #FAFAFA;
     text-align: center;
     max-width: 900px;
-    padding-top: 150px;
+    padding-top: 230px;
+    color: #FAFAFA;
+    font-style: italic;
+}
+
+.midde-text {
+    font-size: 30px;
+    text-align: center;
+    max-width: 900px;
+    padding-top: 10px;
+    color: #FAFAFA;
+}
+
+.text-about-title {
+    font-size: 30px;
+    text-align: center;
+    max-width: 1000px;
+    padding-top: 60px;
+    color: #444;
+}
+
+.text-about {
+    font-size: 15px;
+    text-align: center;
+    max-width: 1000px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+    color: #444;
 }
 
 button.accordion {
@@ -290,7 +317,7 @@ button.accordion.active:after {
     transition: max-height 0.9s ease-out;
     p {
         text-align: center;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 30px auto;
     }
 }
