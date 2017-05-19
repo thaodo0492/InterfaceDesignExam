@@ -401,6 +401,12 @@ button.accordion.active:after {
   margin-bottom: 50px;
   margin-top: 50px; }
 
+#partnerContactDiv {
+  text-align: center; }
+
+#contactBtn {
+  margin: 30px; }
+
 .partnerContainer {
   display: flex;
   justify-content: center;
@@ -413,6 +419,9 @@ button.accordion.active:after {
   text-align: center;
   display: flex;
   flex-direction: column; }
+
+#partnerPDiv h1 {
+  padding-top: 20px; }
 
 .partnerDivInnerContainer div {
   display: flex;

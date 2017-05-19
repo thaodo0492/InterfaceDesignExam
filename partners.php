@@ -3,9 +3,10 @@
 <html>
 
 <head>
-    <title>Index Page</title>
+    <title>Partners</title>
     <link href="style.css" rel="stylesheet">
     <script src="javaScript.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,21 +22,9 @@
             ?>
         </div>
     </div>
+    <div id="partnerContactDiv">
+        <h1>Be our partner</h1>
+        <button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>
+    </div>
 </body>
 </html>
-
-<div id="partnerPDiv">
-    <h1 class="disable-select">Our partners</h1>
-    <div class="content margin-20-auto">
-        <div id="partnerDanskebank" class="partnerIconP"></div>
-        <div id="partnerElgiganten" class="partnerIconP"></div>
-    </div>
-</div>
-<div class="content margin-20-auto">
-    <div id="partnerKk" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-    <div id="partnerDanskebank" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-    <div id="partnerElgiganten" class="partnerIcon"></div>
-</div>
->>>>>>> origin/master
