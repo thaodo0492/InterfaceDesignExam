@@ -6,7 +6,6 @@
     <title>Partners</title>
     <link href="style.css" rel="stylesheet">
     <script src="javaScript.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,7 +23,11 @@
     </div>
     <div id="partnerContactDiv">
         <h1>Be our partner</h1>
-        <button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>
+        <!--<button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>-->
+        <a href="" class="button"><span class="symbol" >📧</span>Contact Us</a>
     </div>
+    <?php
+        include('footer.php');
+    ?>
 </body>
 </html>

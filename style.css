@@ -377,7 +377,7 @@ button.accordion.active:after {
 
 .button:hover span,
 .button.active span {
-  background-color: #00661a;
+  background-color: #38adfa;
   border-right: 1px solid rgba(0, 0, 0, 0.3); }
 
 .button:active {
@@ -402,10 +402,25 @@ button.accordion.active:after {
   margin-top: 50px; }
 
 #partnerContactDiv {
-  text-align: center; }
+  text-align: center;
+  background-color: #dddddd;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #dddddd;
+  padding-bottom: 40px;
+  padding-top: 20px; }
+
+#partnerContactDiv h1 {
+  width: 100%;
+  margin-bottom: 40px; }
 
 #contactBtn {
-  margin: 30px; }
+  margin: 30px;
+  cursor: pointer; }
 
 .partnerContainer {
   display: flex;
@@ -413,7 +428,8 @@ button.accordion.active:after {
   flex-wrap: wrap;
   min-height: 150px;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 #partnerPDiv {
   text-align: center;
@@ -482,14 +498,45 @@ button.accordion.active:after {
   background-color: #dddddd; }
 
 footer {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   background-color: #222;
   padding: 14px;
   font-size: 0.9em;
-  color: #f2f2f2;
-  margin-top: 40px; }
+  color: #f2f2f2; }
+
+footer p {
+  margin: 0 !important; }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
