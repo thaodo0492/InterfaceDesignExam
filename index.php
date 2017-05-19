@@ -4,8 +4,9 @@
 
 <head>
     <title>Index Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script src="javaScript.js"></script>
 </head>
 
 <body>
@@ -13,19 +14,18 @@
     <?php
     include('/header.php');
     ?>
-        <div id="container" class="p-50">
-
+        <div>
             <div class="testDivContainer">
-                <h1 class="disable-select">Available regions</h1>
-                <div class="content testDivInnerContainer">
+                <h1>Available regions</h1>
+                <div class="content margin-20-auto testDivInnerContainer">
                     <div id="imgVesterbro" class="testDiv pointer"></div>
                     <div id="imgNorrebro" class="testDiv pointer"></div>
                     <div id="imgOsterbro" class="testDiv pointer"></div>
                 </div>
             </div>
             <div class="testDivContainer">
-                <h1 class="disable-select">List of events</h1>
-                <div class="content testDivInnerContainer">
+                <h1>List of events</h1>
+                <div class="content margin-20-auto testDivInnerContainer">
                     <div class="eventDiv">
                         <div id="imgBackend" class="eventImg">
                         </div>
@@ -150,8 +150,10 @@
                 </div>
 
             </div>
-
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="javaScript.js"></script>
+
 </body>
 
 </html>
