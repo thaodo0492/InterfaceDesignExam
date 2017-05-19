@@ -497,6 +497,52 @@ button.accordion.active:after {
   /* color: white; */
   background-color: #dddddd; }
 
+#singleEventDiv {
+  min-height: 150px;
+  display: flex;
+  justify-content: center; }
+
+.eventDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  flex-grow: 1; }
+
+.eventDetails a {
+  margin: 6px;
+  font-size: 1.2em; }
+
+#imgFBshare {
+  background: url(images/ShareonFacebook.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(115, 215, 232, 0.36); }
+
+#eventDivLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#eventDivRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#eventDivRight div:last-child {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(115, 215, 232, 0.36); }
+
 footer {
   display: flex !important;
   justify-content: center;
