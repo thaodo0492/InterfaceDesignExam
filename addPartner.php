@@ -10,7 +10,7 @@
 </head>
 
 <body class="imgPartner">
-
+    <div class="container">
     <?php
         include('/header.php');
     ?>
@@ -27,7 +27,7 @@
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="javaScript.js"></script>
-
+</div>
                 <?php
                     include('footer.php');
                 ?>

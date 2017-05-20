@@ -56,6 +56,9 @@ body {
     align-items: baseline!important;
 }
 
+.container {
+    min-height: 85vh;
+}
 
 //--------------------LOGIN--------------------
 
@@ -156,7 +159,7 @@ body {
 }
     
 .imgPartner {
-    background: url(images/Business.jpg);
+    background: url(images/Business.jpeg);
     background-size: cover;
     background-position: center;
 }

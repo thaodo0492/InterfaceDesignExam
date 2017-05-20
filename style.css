@@ -88,6 +88,9 @@ body {
 .alignBase {
   align-items: baseline !important; }
 
+.container {
+  min-height: 85vh; }
+
 #wrapper {
   display: flex;
   align-items: center;
@@ -167,7 +170,7 @@ body {
   color: white; }
 
 .imgPartner {
-  background: url(images/Business.jpg);
+  background: url(images/Business.jpeg);
   background-size: cover;
   background-position: center; }
 
