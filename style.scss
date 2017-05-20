@@ -56,6 +56,54 @@ body {
     align-items: baseline!important;
 }
 
+
+//--------------------LOGIN--------------------
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#indexContent {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px #2c2c2c solid;
+    background-color: #ddd;
+}
+/*
+#btnChange {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}*/
+
+
+#loginDiv {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+#createDiv {
+  //display: flex;
+  width: 200px;
+  margin: auto;
+}
+
+.infoLabel {
+    margin: 0;
+    margin-left: 5px;
+    color: #222;
+    //text-shadow: 1px 1px black;
+}
+  
+
 //--------------------HEADER--------------------
 
 /* Add a black background color to the top navigation */
