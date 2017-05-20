@@ -341,11 +341,8 @@ body {
   width: 46%;
   padding: 4px; }
 
-/*--------------------ABOUT----------------------*/
+/*--------------------ABOUT---FAQ-------------------*/
 #aboutImage {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background: url(images/3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -418,9 +415,9 @@ button.accordion.active:after {
     margin: 30px auto; }
 
 #offerblock {
-  align-items: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .offers {
   display: flex;
@@ -503,6 +500,59 @@ button.accordion.active:after {
 
 #map iframe {
   width: 100%; }
+
+.faq-button {
+  text-align: left; }
+
+.answer {
+  margin: 10px auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .answer p {
+    text-align: left;
+    max-width: 1200px !important; }
+
+#faqImage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url(images/SMA_faq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  margin-bottom: 4px; }
+
+#faq-center {
+  display: flex;
+  justify-content: center; }
+  #faq-center #faq-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 30px; }
+    #faq-center #faq-search h2 {
+      font-size: 20px;
+      color: #444;
+      text-align: left; }
+
+#myInput {
+  background-image: url("images/search.png");
+  background-position: 10px 12px;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+  width: 100%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 40px;
+  /* Add some padding */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  margin-bottom: 12px;
+  /* Add some space below the input */ }
 
 #partnerContactDiv {
   text-align: center;

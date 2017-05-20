@@ -56,12 +56,14 @@ body {
     align-items: baseline!important;
 }
 
+<<<<<<< HEAD
 .container {
     min-height: 85vh;
 }
 
+=======
+>>>>>>> origin/master
 //--------------------LOGIN--------------------
-
 #wrapper {
     display: flex;
     align-items: center;
@@ -76,6 +78,8 @@ body {
     border: 1px #2c2c2c solid;
     background-color: #ddd;
 }
+
+
 /*
 #btnChange {
   text-align: center;
@@ -86,17 +90,16 @@ body {
   justify-content: space-around;
 }*/
 
-
 #loginDiv {
-  width: 200px;
-  margin: auto;
-  text-align: center;
+    width: 200px;
+    margin: auto;
+    text-align: center;
 }
 
 #createDiv {
-  //display: flex;
-  width: 200px;
-  margin: auto;
+    //display: flex;
+    width: 200px;
+    margin: auto;
 }
 
 .infoLabel {
@@ -105,6 +108,8 @@ body {
     color: #222;
     //text-shadow: 1px 1px black;
 }
+<<<<<<< HEAD
+=======
 
 
 //--------------------CREATE ACCOUNT--------------------
@@ -137,6 +142,7 @@ body {
     font-size: 0.8em;
 }
 
+>>>>>>> origin/master
 
 //--------------------ADD PARTNER--------------------
 
@@ -376,12 +382,9 @@ body {
 }
 
 
-/*--------------------ABOUT----------------------*/
+/*--------------------ABOUT---FAQ-------------------*/
 
 #aboutImage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background: url(images/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -465,9 +468,9 @@ button.accordion.active:after {
 }
 
 #offerblock {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .offers {
@@ -567,6 +570,66 @@ button.accordion.active:after {
     width: 100%;
 }
 
+.faq-button {
+    text-align: left;
+}
+
+.answer {
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    p {
+        text-align: left;
+        max-width: 1200px !important;
+    }
+}
+
+#faqImage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/SMA_faq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 4px;
+}
+
+#faq-center {
+    display: flex;
+    justify-content: center;
+    #faq-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1200px;
+        margin-top: 30px;
+        h2 {
+            font-size: 20px;
+            color: #444;
+            text-align: left;
+        }
+    }
+}
+
+#myInput {
+    background-image: url('images/search.png');
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
 
 //--------------------PARTNERS--------------------
 #partnerContactDiv {
@@ -692,9 +755,7 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
-
 //--------------------SINGLE EVENT--------------------
-
 #singleEventDiv {
     min-height: 150px;
     display: flex;
@@ -818,7 +879,7 @@ button.accordion.active:after {
     align-items: center;
 }
 
-#singleEventDetailsContainer > div {
+#singleEventDetailsContainer>div {
     width: 45%;
 }
 
@@ -831,22 +892,20 @@ button.accordion.active:after {
     padding: 0;
 }
 
-#singleEventDetailsContainerR > div:first-child {
+#singleEventDetailsContainerR>div:first-child {
     margin: 16px;
     text-align: center;
 }
 
-#singleEventDetailsContainerR > div:last-child p:first-child {
+#singleEventDetailsContainerR>div:last-child p:first-child {
     margin-bottom: 8px;
 }
 
-#singleEventDetailsContainerR > div:last-child p {
+#singleEventDetailsContainerR>div:last-child p {
     margin: 2px;
 }
 
-
 //--------------------FOOTER--------------------
-
 footer {
     display: flex!important;
     justify-content: center;
