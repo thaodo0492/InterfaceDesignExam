@@ -16,13 +16,15 @@
         <div>
             <div id="faqImage" class="margin-0-auto">
             </div>
-            <div id="faq-search">
-                <div id="faqForm">
-                    <form>
-                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-                    </form>
+            <div id="faq-center">
+                <div id="faq-search">
+                    <div>
+                        <form>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                        </form>
+                    </div>
+                    <h2> Frequently Asked Questions </h2>
                 </div>
-                <h2 class="questions"> Frequently Asked Questions </h2>
             </div>
 
             <div id="offerblock">
@@ -47,7 +49,6 @@
                 <div class="content panel answer">
                     <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
                 </div>
-
             </div>
             <div class="partnerContainer">
                 <div class="partnerDivInnerContainer">

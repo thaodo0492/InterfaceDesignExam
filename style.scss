@@ -56,6 +56,52 @@ body {
     align-items: baseline!important;
 }
 
+//--------------------LOGIN--------------------
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#indexContent {
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px #2c2c2c solid;
+    background-color: #ddd;
+}
+
+
+/*
+#btnChange {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}*/
+
+#loginDiv {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#createDiv {
+    //display: flex;
+    width: 200px;
+    margin: auto;
+}
+
+.infoLabel {
+    margin: 0;
+    margin-left: 5px;
+    color: #222;
+    //text-shadow: 1px 1px black;
+}
+
 //--------------------HEADER--------------------
 
 /* Add a black background color to the top navigation */
@@ -353,9 +399,9 @@ button.accordion.active:after {
 }
 
 #offerblock {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .offers {
@@ -456,7 +502,6 @@ button.accordion.active:after {
 }
 
 .faq-button {
-    width: 1200px !important;
     text-align: left;
 }
 
@@ -482,21 +527,20 @@ button.accordion.active:after {
     margin-bottom: 4px;
 }
 
-#faq-search {
+#faq-center {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-top: 30px;
-    h2 {
-        font-size: 20px;
+    #faq-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 1200px;
-        color: #444;
-        text-align: left;
-        align-self: center;
-    }
-    #faqForm {
-        width: 1200px;
-        align-self: center;
+        margin-top: 30px;
+        h2 {
+            font-size: 20px;
+            color: #444;
+            text-align: left;
+        }
     }
 }
 
@@ -668,10 +712,66 @@ button.accordion.active:after {
 
 #imgFBshare {
     background: url(images/ShareonFacebook.png);
-    background-size: 100px;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
     height: 50px;
+    width: 100%;
+    padding: 14px;
+}
+
+#imgTwittershare {
+    background: url(images/ShareonTwitter.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    padding: 14px;
+}
+
+#imgMessenger {
+    background: url(images/Messenger.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+}
+
+#imgLinkedin {
+    background: url(images/LinkedIn.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+}
+
+#imgEmail {
+    background: url(images/Email.png);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+}
+
+#imgTravelMode {
+    background: url(images/mapTravelMode.jpg);
+    background-size: 250px;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 70px;
+    margin: auto;
+}
+
+#eventShareDiv {
+    display: flex;
     width: 100%;
     background-color: #ddd;
     border: white solid 1px;
@@ -689,6 +789,7 @@ button.accordion.active:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 400px;
 }
 
 #eventDivRight div:last-child {
@@ -700,6 +801,39 @@ button.accordion.active:after {
     background-color: #ddd;
     border: white solid 1px;
     border-radius: 4px;
+}
+
+#singleEventDetailsContainer {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#singleEventDetailsContainer>div {
+    width: 45%;
+}
+
+#singleEventDetailsContainer div p:first-child {
+    font-weight: 600;
+}
+
+#singleEventDetailsContainer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#singleEventDetailsContainerR>div:first-child {
+    margin: 16px;
+    text-align: center;
+}
+
+#singleEventDetailsContainerR>div:last-child p:first-child {
+    margin-bottom: 8px;
+}
+
+#singleEventDetailsContainerR>div:last-child p {
+    margin: 2px;
 }
 
 //--------------------FOOTER--------------------
