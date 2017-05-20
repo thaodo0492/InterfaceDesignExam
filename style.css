@@ -127,6 +127,10 @@ body {
   margin-left: 5px;
   color: #222; }
 
+#adminNav {
+  height: 50px;
+  background-color: #ddd; }
+
 #formCreateAccount {
   display: flex;
   flex-direction: column;

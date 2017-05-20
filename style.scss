@@ -56,13 +56,11 @@ body {
     align-items: baseline!important;
 }
 
-<<<<<<< HEAD
 .container {
     min-height: 85vh;
 }
 
-=======
->>>>>>> origin/master
+
 //--------------------LOGIN--------------------
 #wrapper {
     display: flex;
@@ -108,8 +106,16 @@ body {
     color: #222;
     //text-shadow: 1px 1px black;
 }
-<<<<<<< HEAD
-=======
+
+
+//--------------------ADMIN NAV--------------------
+
+#adminNav {
+    height: 50px;
+    background-color: #ddd;
+}
+
+
 
 
 //--------------------CREATE ACCOUNT--------------------
@@ -142,7 +148,6 @@ body {
     font-size: 0.8em;
 }
 
->>>>>>> origin/master
 
 //--------------------ADD PARTNER--------------------
 
