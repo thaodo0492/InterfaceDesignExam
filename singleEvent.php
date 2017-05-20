@@ -33,9 +33,11 @@
                 <p>REGISTER</p>
             </div>
             </div>
-            
         </div>
-
+    </div>
+    
+    <div id="singleEventDetailsContainer">
+        
     </div>
     
     <div id="map">
