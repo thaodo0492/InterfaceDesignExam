@@ -16,7 +16,7 @@
     ?>
         <div>
             <div class="testDivContainer">
-                <h1>Available regions</h1>
+                <h1 class="disable-select">Available regions</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="imgVesterbro" class="testDiv pointer"></div>
                     <div id="imgNorrebro" class="testDiv pointer"></div>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="testDivContainer">
-                <h1>List of events</h1>
+                <h1 class="disable-select">List of events</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div class="eventDiv">
                         <div id="imgBackend" class="eventImg">

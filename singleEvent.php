@@ -20,7 +20,13 @@
             <div id="eventDivLeft">
             <div id="imgFrontend" class="testDiv pointer" style="height: 300px!important; width: 400px!important;">
             </div>
+            <div id="eventShareDiv">
             <div id="imgFBshare" class="shareImg pointer"></div>
+            <div id="imgTwittershare" class="shareImg pointer"></div>
+            <div id="imgLinkedin" class="shareImg pointer"></div>
+            <div id="imgMessenger" class="shareImg pointer"></div>
+            <div id="imgEmail" class="shareImg pointer"></div>
+            </div>
             </div>
             <div id="eventDivRight">
             <div class="eventDetails">
@@ -58,19 +64,29 @@
         </div>
         <div id="singleEventDetailsContainerR">
             <div>
-                <p>Description</p>
+                <button class="btn btn-primary">Add to calender</button>
             </div>
             <div>
-                <p>Add to calender</p>
+                <p>Details</p>
+                <ul>
+                    <li>Food - Yes</li>
+                    <li>Price - 50 kr</li>
+                    <li>Level - Beginner</li>
+                    <li>Available seats: 48</li>
+                </ul>
             </div>
             <div>
                 <p>Location</p>
+                <p>KEA</p>
+                <p>Lygten 37</p>
+                <p>2200 Nørrebro</p>
             </div>
         </div>
     </div>
     
     <div id="map">
                     <iframe width="1200" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDThtVQncVO-lgLbScuMNTThJzKKL_Ekyo&origin=Nørreport&destination=Lygten+37&avoid=tolls|highways" allowfullscreen></iframe>
+                    <div id="imgTravelMode" class="testDiv pointer"></div>
                 </div>
     
     <div class="partnerContainer">
