@@ -267,12 +267,9 @@ body {
 }
 
 
-/*--------------------ABOUT----------------------*/
+/*--------------------ABOUT---FAQ-------------------*/
 
 #aboutImage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background: url(images/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -458,6 +455,68 @@ button.accordion.active:after {
     width: 100%;
 }
 
+.faq-button {
+    width: 1200px !important;
+    text-align: left;
+}
+
+.answer {
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    p {
+        text-align: left;
+        max-width: 1200px !important;
+    }
+}
+
+#faqImage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/SMA_faq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 4px;
+}
+
+#faq-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    h2 {
+        font-size: 20px;
+        width: 1200px;
+        color: #444;
+        text-align: left;
+        align-self: center;
+    }
+    #faqForm {
+        width: 1200px;
+        align-self: center;
+    }
+}
+
+#myInput {
+    background-image: url('images/search.png');
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
 
 //--------------------PARTNERS--------------------
 #partnerContactDiv {
@@ -583,9 +642,7 @@ button.accordion.active:after {
     background-color: #dddddd;
 }
 
-
 //--------------------SINGLE EVENT--------------------
-
 #singleEventDiv {
     min-height: 150px;
     display: flex;
@@ -645,9 +702,7 @@ button.accordion.active:after {
     border-radius: 4px;
 }
 
-
 //--------------------FOOTER--------------------
-
 footer {
     display: flex!important;
     justify-content: center;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <title>FAQ</title>
     <link href="style.css" rel="stylesheet">
@@ -8,30 +9,61 @@
 </head>
 
 <body>
-    
+
     <?php
     include('/header.php');
     ?>
-    <div id="content" class="p-50">
-        <div id="questionsDiv">
-            <h1 class="disable-select">General questions</h1>
-            <div id="question1" class="questionsDiv">
-                
-                <h3>Can I get a refund if I cancel a booking? <div id="partnerElgiganten" class="partnerIcon"></div></h3>
-                <h4>If you cancel a booking, you will be able to get a refund depending on when you cancel.
-                If you cancel a booking, you will be able to get a refund depending on when you cancel.</h4>
+        <div>
+            <div id="faqImage" class="margin-0-auto">
             </div>
-        </div>
-        
-        <div class="partnerContainer">   
-            <div class="partnerDivInnerContainer">
-                <?php
-                include('partners.php');
-                ?>
+            <div id="faq-search">
+                <div id="faqForm">
+                    <form>
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                    </form>
+                </div>
+                <h2 class="questions"> Frequently Asked Questions </h2>
             </div>
 
+            <div id="offerblock">
+
+                <button id="1" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
+                <div class="content panel answer">
+                    <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
+                </div>
+                <button id="2" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
+                <div class="content panel answer">
+                    <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
+                </div>
+                <button id="3" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
+                <div class="content panel answer">
+                    <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
+                </div>
+                <button id="4" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
+                <div class="content panel answer">
+                    <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
+                </div>
+                <button id="5" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
+                <div class="content panel answer">
+                    <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
+                </div>
+
+            </div>
+            <div class="partnerContainer">
+                <div class="partnerDivInnerContainer">
+                    <?php
+                        include('showPartners.php');
+                    ?>
+                </div>
+            </div>
         </div>
-        
-    </div>
+        <?php
+        include('footer.php');
+    ?>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="javaScript.js"></script>
+
 </body>
+
 </html>
