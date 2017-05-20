@@ -36,8 +36,37 @@
         </div>
     </div>
     
-    <div id="singleEventDetailsContainer">
-        
+    <div id="singleEventDetailsContainer" class="content">
+        <div id="singleEventDetailsContainerL">
+            <div>
+                <p>Description</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur metus orci, quis blandit risus tristique ac. Phasellus blandit lacus odio, ac congue odio suscipit eget. </p>
+            </div>
+            <div>
+                <p>Program</p>
+                <ul>
+                    <li>11:00 - Meet and greet</li>
+                    <li>11:50 - Introduction</li>
+                    <li>12:30 - Guest speaker</li>
+                    <li>13:00 - New practice</li>
+                </ul>
+            </div>
+            <div>
+                <p>Speaker</p>
+                <p>Mr. Thao</p>
+            </div>
+        </div>
+        <div id="singleEventDetailsContainerR">
+            <div>
+                <p>Description</p>
+            </div>
+            <div>
+                <p>Add to calender</p>
+            </div>
+            <div>
+                <p>Location</p>
+            </div>
+        </div>
     </div>
     
     <div id="map">

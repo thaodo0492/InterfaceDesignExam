@@ -645,6 +645,29 @@ button.accordion.active:after {
     border-radius: 4px;
 }
 
+#singleEventDetailsContainer {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#singleEventDetailsContainer > div {
+    width: 45%;
+}
+
+#singleEventDetailsContainer div p:first-child {
+    font-weight: 600;
+}
+
+#singleEventDetailsContainerL ul {
+    list-style: none;
+}
+
+#singleEventDetailsContainerR {
+    
+}
+
 
 //--------------------FOOTER--------------------
 
