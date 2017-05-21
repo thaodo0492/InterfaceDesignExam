@@ -555,6 +555,13 @@ button.accordion.active:after {
   margin-bottom: 12px;
   /* Add some space below the input */ }
 
+.page-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; }
+  .page-button button {
+    padding-right: 10px; }
+
 #partnerContactDiv {
   text-align: center;
   background-color: #dddddd;

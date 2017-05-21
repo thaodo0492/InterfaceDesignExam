@@ -622,6 +622,15 @@ button.accordion.active:after {
     /* Add some space below the input */
 }
 
+.page-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    button {
+        padding-right: 10px;
+    }
+}
+
 //--------------------PARTNERS--------------------
 #partnerContactDiv {
     text-align: center;
