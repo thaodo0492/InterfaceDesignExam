@@ -20,6 +20,11 @@
 </div>
 <?php
     if(isset($_SESSION["loggedIn"])){
-        echo "<div id='adminNav'></div>";
+        echo "<div id='adminNav'>
+            <a href='logoutApi.php' id='adminNavHeading'>LOGOUT</a>
+            <a href='addPartner.php' id='adminNavHeading'>Add partner</a>
+            <a href='createAccount.php' id='adminNavHeading'>Add admin</a>
+            <a href='createEvent.php' id='adminNavHeading'>Add event</a>
+        </div>";
     }
 ?>
