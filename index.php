@@ -18,9 +18,9 @@
             <div class="testDivContainer">
                 <h1 class="disable-select">Available regions</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
-                    <div id="imgVesterbro" class="testDiv pointer"></div>
-                    <div id="imgNorrebro" class="testDiv pointer"></div>
-                    <div id="imgOsterbro" class="testDiv pointer"></div>
+                    <a href="events.php"<span id="imgVesterbro" class="testDiv pointer"></span></a>
+                    <a href="events.php"<span id="imgNorrebro" class="testDiv pointer"></span></a>
+                    <a href="events.php"<span id="imgOsterbro" class="testDiv pointer"></span></a>
                 </div>
             </div>
             <div class="testDivContainer">
