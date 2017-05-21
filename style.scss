@@ -115,7 +115,6 @@ body {
     align-items: center;
 }
 
-
 #adminNav a {
     text-decoration: none;
 }
@@ -127,9 +126,7 @@ body {
     letter-spacing: 1px;
 }
 
-
 //--------------------CREATE ACCOUNT--------------------
-
 #formCreateAccount {
     display: flex;
     flex-direction: column;
@@ -158,9 +155,7 @@ body {
     font-size: 0.8em;
 }
 
-
 //--------------------ADD PARTNER--------------------
-
 #formAddAccount {
     display: flex;
     flex-direction: column;
@@ -192,7 +187,7 @@ body {
 .topnavContainer {
     //display: flex;
     align-items: center;
-    background-color: #222;
+    background-color: #263238;
     overflow: hidden;
     justify-content: space-between;
 }
@@ -202,7 +197,7 @@ body {
     display: flex;
     margin: auto;
     align-items: center;
-    background-color: #222;
+    background-color: #263238;
     overflow: hidden;
     justify-content: space-between;
 }
@@ -441,8 +436,8 @@ body {
 }
 
 button.accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #455A64;
+    color: #ddd;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -455,12 +450,12 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-    background-color: #ddd;
+    background-color: #607D8B;
 }
 
 button.accordion:after {
     content: '\002B';
-    color: #777;
+    color: #FFC107;
     font-weight: bold;
     float: right;
 }
@@ -603,7 +598,8 @@ button.accordion.active:after {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: url(images/SMA_faq.jpg);
+    background: url(images/faqq.jpg);
+    filter: hue-rotate(230deg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -624,7 +620,7 @@ button.accordion.active:after {
 }
 
 #myInput {
-    background-image: url('images/search.png');
+    background-image: url('images/search1.png');
     background-position: 10px 12px;
     /* Position the search icon */
     background-repeat: no-repeat;
@@ -924,9 +920,7 @@ button.accordion.active:after {
     margin: 2px;
 }
 
-
 //--------------------CREATE EVENT--------------------
-
 .imgEvent {
     background: url(images/Event.jpg);
     background-size: cover;
@@ -962,13 +956,12 @@ select {
     margin: 12px 0;
 }
 
-
 //--------------------FOOTER--------------------
 footer {
     display: flex!important;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    background-color: #263238;
     padding: 14px;
     font-size: 0.9em;
     color: #f2f2f2;
