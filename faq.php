@@ -17,18 +17,10 @@
             <div id="faqImage" class="margin-0-auto">
             </div>
             <div id="faq-center">
-                <div id="faq-search">
-                    <div>
-                        <form>
-                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-                        </form>
-                    </div>
-                    <h2> Frequently Asked Questions </h2>
-                </div>
-            </div>
-
-            <div id="offerblock">
-
+                <form>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                </form>
+                <h2> Frequently Asked Questions </h2>
                 <button id="1" class="accordion faq-button">Q: LOOKING FOR AN EVENT VENUE? </button>
                 <div class="content panel answer">
                     <p>In an expansive business it is imperative to increase one's visibility and share with others what you do. Competition is fierce and it's vital to get your message across with clarity, as well as to define and target your audience in order for your business to grow and thrive.</p>
