@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 ?>
 <div class="topnavContainer p-sides-50">
     <div class="topnavInnerContainer">
@@ -18,3 +18,8 @@
         </div>
     </div>
 </div>
+<?php
+    if(isset($_SESSION["loggedIn"])){
+        echo "<div id='adminNav'></div>";
+    }
+?>

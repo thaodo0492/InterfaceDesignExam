@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -52,24 +55,44 @@
 
 </div>
 
-<script>
-      //HIDE AND SHOW BASED ON BUTTONS
-$("#btnCreateSection").click(function(){
-  $("#createDiv").show();
-  $("#loginDiv").hide();
-  $(".errorLabel").html("");
-  $(".bottomLabel").html("");
-  $("input").val("");
-});
-
-$("#btnLoginSection").click(function(){
-  $("#loginDiv").show();
-  $("#createDiv").hide();
-  $(".errorLabel").html("");
-  $(".bottomLabel").html("");
-  $("input").val("");
-});
-</script>
+    <script>
+    //HIDE AND SHOW BASED ON BUTTONS
+    $("#btnCreateSection").click(function(){
+      $("#createDiv").show();
+      $("#loginDiv").hide();
+      $(".errorLabel").html("");
+      $(".bottomLabel").html("");
+      $("input").val("");
+    });
+    
+    $("#btnLoginSection").click(function(){
+      $("#loginDiv").show();
+      $("#createDiv").hide();
+      $(".errorLabel").html("");
+      $(".bottomLabel").html("");
+      $("input").val("");
+    });
+    
+    var sLink = "loginApi.php";
+    
+    $("#btnLogin").click(function(){
+        
+        $.ajax({
+         "url":sLink,
+         "dataType":"text",
+         "method":"post",
+         "cache": false
+         }).done( function(Data){
+          //var result = JSON.parse(Data);
+            if (Data == "success") {
+                window.location.replace("http://stackoverflow.com");
+            }
+           console.log(Data);
+           window.location.replace("index.php");
+         })
+    });
+        
+    </script>
 
 </body>
 </html>

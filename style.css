@@ -88,6 +88,9 @@ body {
 .alignBase {
   align-items: baseline !important; }
 
+.container {
+  min-height: 85vh; }
+
 #wrapper {
   display: flex;
   align-items: center;
@@ -124,6 +127,10 @@ body {
   margin-left: 5px;
   color: #222; }
 
+#adminNav {
+  height: 50px;
+  background-color: #ddd; }
+
 #formCreateAccount {
   display: flex;
   flex-direction: column;
@@ -148,6 +155,28 @@ body {
 
 #checkInfo {
   font-size: 0.8em; }
+
+#formAddAccount {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 50px;
+  /* background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(45,45,45,0.85) 12%, rgba(45,45,45,0.85) 88%, rgba(52,57,61,0.85) 89%, rgba(125,185,232,0) 100%);
+   background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
+   background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); */
+  background-color: rgba(34, 34, 34, 0.88);
+  border-radius: 8px;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  color: white; }
+
+.imgPartner {
+  background: url(images/Business.jpeg);
+  background-size: cover;
+  background-position: center; }
 
 /* Add a black background color to the top navigation */
 .topnavContainer {
