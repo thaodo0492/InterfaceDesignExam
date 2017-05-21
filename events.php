@@ -19,32 +19,32 @@
                 <h1>PLEASE OPTIMIZE YOUR SEARCH HERE</h1>
                 <div id="filterbuttons">
                     <select id="cd-dropdown" class="cd-select">
-                        <option value="-1" selected>Pick an</option>
-                        <option value="1">Linux</option>
-                        <option value="2">Mac</option>
-                        <option value="3">Windows</option>
-                        <option value="4">Android</option>
+                        <option value="-1" selected>Categories</option>
+                        <option value="1">Database</option>
+                        <option value="2">UX/UI</option>
+                        <option value="3">Mobile</option>
+                        <option value="4">Software</option>
                         </select>
                     <select id="cd-dropdown1" class="cd-select">
-                    <option value="-1" selected>Pick an</option>
-                    <option value="1">Linux</option>
-                    <option value="2">Mac</option>
-                    <option value="3">Windows</option>
-                    <option value="4">Android</option>
+                    <option value="-1" selected>Districts</option>
+                    <option value="1">Vesterbro</option>
+                    <option value="2">Nørrebro</option>
+                    <option value="3">Østerbro</option>
+                    <option value="4">Valby</option>
                     </select>
                     <select id="cd-dropdown2" class="cd-select">
-                    <option value="-1" selected>Pick an</option>
-                    <option value="1">Linux</option>
-                    <option value="2">Mac</option>
-                    <option value="3">Windows</option>
-                    <option value="4">Android</option>
+                    <option value="-1" selected>Date</option>
+                    <option value="1">Today</option>
+                    <option value="2">This Week</option>
+                    <option value="3">Next Week</option>
+                    <option value="4">This Month</option>
                     </select>
                     <select id="cd-dropdown3" class="cd-select">
-                    <option value="-1" selected>Pick an</option>
-                    <option value="1">Linux</option>
-                    <option value="2">Mac</option>
-                    <option value="3">Windows</option>
-                    <option value="4">Android</option>
+                    <option value="-1" selected>Price</option>
+                    <option value="1">Free</option>
+                    <option value="2">Up to 10$</option>
+                    <option value="3">Up to 50$</option>
+                    <option value="4">More than 50$</option>
                     </select>
                 </div>
             </div>
