@@ -113,9 +113,21 @@ body {
 #adminNav {
     height: 50px;
     background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+#adminNav a {
+    text-decoration: none;
+}
 
+#adminNavHeading {
+    color: #ffffff;
+    text-shadow: #222222 1px 1px 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 
 //--------------------CREATE ACCOUNT--------------------
