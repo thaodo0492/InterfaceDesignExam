@@ -10,8 +10,7 @@
 </div>
 <div class="content">
 <div id="partnerKk" class="partnerIcon"></div>
-<div id="partnerElgiganten" class="partnerIcon"></div>
-<div id="partnerDanskebank" class="partnerIcon"></div>
-<div id="partnerElgiganten" class="partnerIcon"></div>
-<div id="partnerElgiganten" class="partnerIcon"></div>
+<div id="partnerLogitech" class="partnerIcon"></div>
+<div id="partnerMicrosoft" class="partnerIcon"></div>
+<div id="partnerBP" class="partnerIcon"></div>
 </div>
