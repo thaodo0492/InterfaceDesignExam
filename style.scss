@@ -60,7 +60,6 @@ body {
     min-height: 85vh;
 }
 
-
 //--------------------LOGIN--------------------
 #wrapper {
     display: flex;
@@ -107,9 +106,7 @@ body {
     //text-shadow: 1px 1px black;
 }
 
-
 //--------------------ADMIN NAV--------------------
-
 #adminNav {
     height: 50px;
     background-color: #ddd;
@@ -118,6 +115,7 @@ body {
     align-items: center;
 }
 
+<<<<<<< HEAD
 #adminNav a {
     text-decoration: none;
 }
@@ -130,8 +128,9 @@ body {
 }
 
 
+=======
+>>>>>>> origin/master
 //--------------------CREATE ACCOUNT--------------------
-
 #formCreateAccount {
     display: flex;
     flex-direction: column;
@@ -139,7 +138,7 @@ body {
     justify-content: center;
     margin: 50px auto;
     padding: 50px;
-   /* background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(45,45,45,0.85) 12%, rgba(45,45,45,0.85) 88%, rgba(52,57,61,0.85) 89%, rgba(125,185,232,0) 100%);
+    /* background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(45,45,45,0.85) 12%, rgba(45,45,45,0.85) 88%, rgba(52,57,61,0.85) 89%, rgba(125,185,232,0) 100%);
     background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
     background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); */
@@ -148,7 +147,7 @@ body {
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
     color: white;
-    }
+}
 
 .imgEmployee {
     background: url(images/Employee.jpg);
@@ -160,9 +159,7 @@ body {
     font-size: 0.8em;
 }
 
-
 //--------------------ADD PARTNER--------------------
-
 #formAddAccount {
     display: flex;
     flex-direction: column;
@@ -170,7 +167,7 @@ body {
     justify-content: center;
     margin: 50px auto;
     padding: 50px;
-   /* background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(45,45,45,0.85) 12%, rgba(45,45,45,0.85) 88%, rgba(52,57,61,0.85) 89%, rgba(125,185,232,0) 100%);
+    /* background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(45,45,45,0.85) 12%, rgba(45,45,45,0.85) 88%, rgba(52,57,61,0.85) 89%, rgba(125,185,232,0) 100%);
     background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
     background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(45,45,45,0.85) 12%,rgba(45,45,45,0.85) 88%,rgba(52,57,61,0.85) 89%,rgba(125,185,232,0) 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); */
@@ -180,13 +177,12 @@ body {
     border-bottom: 1px solid #222222;
     color: white;
 }
-    
+
 .imgPartner {
     background: url(images/Business.jpeg);
     background-size: cover;
     background-position: center;
 }
-
 
 //--------------------HEADER--------------------
 
@@ -488,6 +484,7 @@ button.accordion.active:after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .offers {
@@ -615,18 +612,13 @@ button.accordion.active:after {
 
 #faq-center {
     display: flex;
-    justify-content: center;
-    #faq-search {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 1200px;
-        margin-top: 30px;
-        h2 {
-            font-size: 20px;
-            color: #444;
-            text-align: left;
-        }
+    margin: 50px auto;
+    flex-flow: column;
+    max-width: 1200px;
+    h2 {
+        font-size: 20px;
+        color: #444;
+        text-align: left;
     }
 }
 
