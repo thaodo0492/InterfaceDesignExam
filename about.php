@@ -13,11 +13,11 @@
     <?php
     include('/header.php');
     ?>
-        <div>
+        <div class="main-background">
             <div id="aboutImage" class="margin-0-auto">
             </div>
             <div>
-                <h1 class="text-about-title margin-0-auto">Welcome to Tech event</h1>
+                <h1 class="text-about-title margin-0-auto">WELCOME TO TECH EVENT</h1>
                 <h1 class="margin-0-auto text-about">Tech is the natural meeting place for everyone passionate about media and technology. Whether you are a creative, architect, programmer, gamester, geek girl or serial entrepreneur, Tech gives you a forum to meet, greet and develop, every day of the year.Tech is the natural meeting place for everyone passionate about media and technology.programmer, gamester, geek girl.</h1>
             </div>
             <div id="offerblock">
@@ -41,7 +41,7 @@
                             <img class="offerImage" src="images/Backend.jpg" alt="Offer Image">
                             <div class="offerText">We offer your company visibility to the right target audience, via presence at a variety of activities. Groups can easily see that you support their initiatives. </div>
                         </div>
-                        <a href="" class="button"><span class="symbol" >📧</span>Contact Us</a>
+                        <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
                     </div>
                 </div>
                 <button id="partners" class="accordion">WANT TO BE OUR PARTNER? </button>
@@ -64,7 +64,7 @@
                             <img class="offerImage" src="images/Backend.jpg" alt="Offer Image">
                             <div class="offerText">We offer your company visibility to the right target audience, via presence at a variety of activities. Groups can easily see that you support their initiatives. </div>
                         </div>
-                        <a href="" class="button"><span class="symbol" >📧</span>Contact Us</a>
+                        <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
                     </div>
                 </div>
             </div>

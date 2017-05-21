@@ -59,6 +59,9 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden; }
 
+.main-background {
+  background-color: #f6f6f6; }
+
 .content {
   max-width: 1200px;
   margin: auto; }
@@ -381,11 +384,11 @@ body {
   color: #FAFAFA; }
 
 .text-about-title {
-  font-size: 30px;
+  font-size: 25px;
+  color: #444;
   text-align: center;
   max-width: 1000px;
-  padding-top: 60px;
-  color: #444; }
+  padding-top: 60px; }
 
 .text-about {
   font-size: 15px;
@@ -396,7 +399,7 @@ body {
   color: #444; }
 
 button.accordion {
-  background-color: #455A64;
+  background-color: #00527D;
   color: #ddd;
   cursor: pointer;
   padding: 18px;
@@ -404,12 +407,11 @@ button.accordion {
   border: none;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
-  margin-bottom: 4px; }
+  transition: 0.4s; }
 
 button.accordion.active,
 button.accordion:hover {
-  background-color: #607D8B; }
+  background-color: #455A64; }
 
 button.accordion:after {
   content: '\002B';
@@ -421,7 +423,7 @@ button.accordion.active:after {
   content: "\2212"; }
 
 .panel {
-  background-color: white;
+  background-color: #f6f6f6;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.9s ease-out; }
@@ -469,7 +471,7 @@ button.accordion.active:after {
   padding-right: 30px;
   padding-left: 70px;
   position: relative;
-  background-color: #297fb8;
+  background-color: #00527D;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -481,7 +483,7 @@ button.accordion.active:after {
   position: absolute;
   left: 0;
   width: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #263238;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
@@ -489,7 +491,8 @@ button.accordion.active:after {
 
 .button:hover span,
 .button.active span {
-  background-color: #38adfa;
+  background-color: #455A64;
+  color: white;
   border-right: 1px solid rgba(0, 0, 0, 0.3); }
 
 .button:active {
@@ -497,17 +500,17 @@ button.accordion.active:after {
   margin-bottom: 13px; }
 
 .symbol {
-  font-size: 20px; }
+  font-size: 20px;
+  color: #FFC107; }
 
 #mapblock {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: cadetblue; }
+  align-items: center; }
   #mapblock h1 {
     margin-top: 50px;
-    font-size: 20px;
-    color: #dddddd; }
+    font-size: 25px;
+    color: #444; }
 
 #map {
   width: 90vw;
@@ -527,6 +530,7 @@ button.accordion.active:after {
   padding-right: 10px; }
   .answer p {
     text-align: left;
+    font-size: 15px;
     max-width: 1200px !important; }
 
 #faqImage {
@@ -537,17 +541,20 @@ button.accordion.active:after {
   filter: hue-rotate(230deg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 30% 57%;
   height: 300px;
   margin-bottom: 4px; }
 
 #faq-center {
   display: flex;
-  margin: 50px auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
   flex-flow: column;
   max-width: 1200px; }
   #faq-center h2 {
-    font-size: 20px;
+    font-size: 25px;
     color: #444;
     text-align: left; }
 
@@ -577,7 +584,7 @@ button.accordion.active:after {
 
 #partnerContactDiv {
   text-align: center;
-  background-color: #dddddd;
+  background-color: #DFE2DB;
   padding-bottom: 40px;
   padding-top: 20px;
   display: flex;
@@ -602,8 +609,7 @@ button.accordion.active:after {
   flex-wrap: wrap;
   min-height: 150px;
   flex-direction: column;
-  text-align: center;
-  margin-bottom: 20px; }
+  text-align: center; }
 
 #partnerPDiv {
   text-align: center;

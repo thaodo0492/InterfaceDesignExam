@@ -13,7 +13,7 @@
     <?php
     include('/header.php');
     ?>
-        <div>
+        <div class="main-background">
             <div id="faqImage" class="margin-0-auto">
             </div>
             <div id="faq-center">
