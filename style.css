@@ -650,6 +650,24 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center; }
 
+#partnerLogitech {
+  background: url(images/Logitech.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#partnerMicrosoft {
+  background: url(images/Microsoft.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#partnerBP {
+  background: url(images/BP.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 #questionsDiv {
   text-align: center;
   padding: 20px; }
