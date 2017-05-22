@@ -11,25 +11,26 @@
 </head>
 
 <body>
-    
+
     <?php
         include('/header.php');
     ?>
 
-    <div class="partnerContainer">
-        <div class="partnerDivInnerContainer">
-            <?php
+        <div class="partnerContainer">
+            <div class="partnerDivInnerContainer">
+                <?php
                 include('showPartners.php');
             ?>
+            </div>
         </div>
-    </div>
-    <div id="partnerContactDiv">
-        <h1>Be our partner</h1>
-        <!--<button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>-->
-        <a href="" class="button"><span class="symbol" >📧</span>Contact Us</a>
-    </div>
-    <?php
+        <div id="partnerContactDiv">
+            <h1>WANT TO BE OUR PARTNER?</h1>
+            <!--<button type="button" id="contactBtn" class="btn btn-primary">CONTACT US</button>-->
+            <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
+        </div>
+        <?php
         include('footer.php');
     ?>
 </body>
+
 </html>

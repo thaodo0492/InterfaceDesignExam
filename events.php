@@ -15,7 +15,7 @@
     <?php
     include('/header.php');
     ?>
-        <div>
+        <div class="main-background">
             <div id="filter">
                 <h1>PLEASE OPTIMIZE YOUR SEARCH HERE</h1>
                 <div id="filterbuttons">
@@ -55,7 +55,7 @@
 
 
             <div class="testDivContainer">
-                <h1>List of events</h1>
+                <h1>LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div class="eventDiv">
                         <div id="imgBackend" class="eventImg">

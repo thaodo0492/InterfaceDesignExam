@@ -67,8 +67,11 @@
                             <div class="offerText">We offer your company visibility to the right target audience, via presence at a variety of activities. Groups can easily see that you support their initiatives. </div>
                         </div>
                         <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
+
                     </div>
+                    <hr>
                 </div>
+
             </div>
 
 
