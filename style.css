@@ -103,10 +103,7 @@ hr {
 .container {
   min-height: 85vh; }
 
-<<<<<<< HEAD
-=======
 /*event filter drop down fixed for media queries*/
->>>>>>> origin/master
 .cd-active {
   z-index: 2000; }
 
@@ -902,14 +899,15 @@ button.accordion.active:after {
 #eventDivLeft {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 60%; }
 
 #eventDivRight {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px; }
+  width: 40%; }
 
 #eventDivRight div:last-child {
   height: 50px;
@@ -1024,6 +1022,9 @@ footer p {
     display: block; }
 
   #eventDivLeft {
+    width: 100%; }
+
+  #eventDivRight {
     width: 100%; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
