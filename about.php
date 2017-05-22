@@ -71,11 +71,7 @@
                     </div>
                     <hr>
                 </div>
-
             </div>
-
-
-
             <div id="mapblock">
                 <h1>FIND YOUR WAY TO US</h1>
                 <div id="map">
@@ -93,9 +89,6 @@
         <?php
             include('footer.php');
         ?>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="javaScript.js"></script>
 
 </body>
 

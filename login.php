@@ -34,26 +34,13 @@
         <?php
             include('footer.php');
         ?>
-        
-        <script>
-var sLink = "loginApi.php";
 
-$("#btnLogin").click(function () {
-console.log("LOGGING...");
-    $.ajax({
-        "url": sLink,
-        "dataType": "text",
-        "method": "post",
-        "cache": false
-    }).done(function (Data) {
-        //var result = JSON.parse(Data);
-        if (Data == "success") {
-            window.location.replace("http://stackoverflow.com");
-        }
-        console.log(Data);
-        window.location.replace("index.php");
-    })
-});
-</script>
+            <script>
+                var sLink = "loginApi.php";
+                $("#btnLogin").click(function() {
+ console.log("LOGGING..."); $.ajax({ "url": sLink, "dataType": "text", "method": "post", "cache": false }).done(function(Data) { //var result = JSON.parse(Data); if (Data == "success") { window.location.replace("http://stackoverflow.com"); } console.log(Data); window.location.replace("index.php"); }) });
+
+            </script>
 </body>
+
 </html>

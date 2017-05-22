@@ -41,24 +41,10 @@
                 <input type="submit" value="Submit" class="btn btn-primary">
             </form>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="javaScript.js"></script>
-
         <?php
-                    include('footer.php');
-                ?>
-
-
+        include('footer.php');
+    ?>
             <script>
-                //HIDE AND SHOW
-                /*
-                    $('#ticketSelect option').each(function() {
-                    if(free.selected){
-                        $("#eventPrice").hide();
-                    }
-                    });*/
-
                 $('#ticketSelect').change(function() {
                     if ($('#ticketSelect').val() == 'free') {
                         $("#priceP").hide();
