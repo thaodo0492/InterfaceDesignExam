@@ -4,7 +4,7 @@
     <div class="topnavContainer p-sides-50">
         <div class="topnavInnerContainer">
             <div class="topnav" id="myTopnav">
-                <a href="index.php" id="navLogo"><img class="pointer" src="images/logo.png" alt="facebook logo" height="30" width="auto"></a>
+                <a href="index.php" id="navLogo"><img class="pointer" src="images/LogoInverted.svg" alt="facebook logo" height="30" width="auto"></a>
                 <a href="events.php">Events</a>
                 <a href="partners.php">Partners</a>
                 <a href="about.php">About</a>
