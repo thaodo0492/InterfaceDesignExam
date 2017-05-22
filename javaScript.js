@@ -45,6 +45,7 @@ function TopnavOpen() {
 /**********************************************************/
 
 //HIDE AND SHOW BASED ON BUTTONS
+/*
 $("#btnCreateSection").click(function () {
     $("#createDiv").show();
     $("#loginDiv").hide();
@@ -64,7 +65,7 @@ $("#btnLoginSection").click(function () {
 var sLink = "loginApi.php";
 
 $("#btnLogin").click(function () {
-
+console.log("LOGGING...");
     $.ajax({
         "url": sLink,
         "dataType": "text",
@@ -79,3 +80,4 @@ $("#btnLogin").click(function () {
         window.location.replace("index.php");
     })
 });
+*/
