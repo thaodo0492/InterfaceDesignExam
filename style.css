@@ -103,6 +103,9 @@ hr {
 .container {
   min-height: 85vh; }
 
+.cd-active {
+  z-index: 2000; }
+
 #wrapper {
   display: flex;
   align-items: center;

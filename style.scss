@@ -77,6 +77,15 @@ hr {
     min-height: 85vh;
 }
 
+//TESTING FIX FOR DROPDOWNS
+
+.cd-active {
+    z-index: 2000;
+}
+
+
+
+
 //--------------------LOGIN--------------------
 #wrapper {
     display: flex;
