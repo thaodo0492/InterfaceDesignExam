@@ -291,7 +291,9 @@ span {
   border-radius: 5px 5px 0 0; }
 
 .testDivContainer h1 {
-  text-align: center; }
+  text-align: center;
+  color: #444;
+  font-size: 25px; }
 
 #imgVesterbro {
   background: url(images/Vesterbro.jpg);

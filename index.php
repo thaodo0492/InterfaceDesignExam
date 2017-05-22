@@ -18,7 +18,7 @@
     ?>
         <div class="main-background">
             <div class="testDivContainer">
-                <h1 class="disable-select">Available regions</h1>
+                <h1 class="disable-select">AVAILABLE REGIONS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <a href="events.php"><span id="imgVesterbro" class="testDiv pointer"></span>
                     </a>
