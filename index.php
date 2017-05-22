@@ -20,12 +20,14 @@
             <div class="testDivContainer">
                 <h1 class="disable-select">AVAILABLE REGIONS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
-                    <a href="events.php"><span id="imgVesterbro" class="testDiv pointer"></span>
+
+                    <a href="events.php" class="testDiv"><span id="imgVesterbro" class="testDiv pointer"></span>
                     </a>
-                    <a href="events.php"><span id="imgNorrebro" class="testDiv pointer"></span>
+                    <a href="events.php" class="testDiv"><span id="imgNorrebro" class="testDiv pointer"></span>
                     </a>
-                    <a href="events.php"><span id="imgOsterbro" class="testDiv pointer"></span>
+                    <a href="events.php" class="testDiv"><span id="imgOsterbro" class="testDiv pointer"></span>
                     </a>
+
                 </div>
             </div>
             <div class="testDivContainer">
