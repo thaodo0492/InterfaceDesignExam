@@ -14,7 +14,7 @@
 <body>
     <?php
             include('/header.php');
-        ?>
+    ?>
         <div class="login-background" id="wrapper">
             <div id="indexContent">
                 <h3 id="headline">LOGIN</h3>
@@ -25,13 +25,13 @@
                     <h5 id="infoLabelUser" class="infoLabel">PASSWORD</h5>
                     <input id="passInput" autocorrect="off" autocapitalize="off" autocomplete="off" class="loginInputLoginpage" type="password" name="txLoginFormPassword">
                     <h5 id="errorLabelPass" class="errorLabel"></h5>
-                    <button type="button" id="btnLogin" class="btn btn-primary postBtn">LOGIN</button>
+                    <button type="button" id="btnLogin" class="btn btn-primary postBtn">Login</button>
                     <h5 id="LoginLabel" class="errorLabel bottomLabel"></h5>
                 </div>
 
             </div>
         </div>
-<?php
+        <?php
             include('footer.php');
         ?>
         

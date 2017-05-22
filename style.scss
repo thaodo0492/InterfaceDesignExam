@@ -1103,25 +1103,22 @@ button.accordion.active:after {
     display: flex;
     flex-direction: column;
     width: 300px;
-    justify-content: center;
-    margin: 50px auto;
+    justify-content: flex-start;
+    margin: 50px 0;
     padding: 50px;
-    background-color: rgba(108, 199, 214, 0.88);
-    border-radius: 5px;
-    color: white;
+    background-color: #f6f6f6;
+    color: #444;
 }
 
 #formCreateEvent2 {
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 100%;
-    justify-content: center;
-    margin: 50px auto;
+    justify-content: flex-start;
+    margin: 50px 0;
     padding: 50px;
-    background-color: rgba(108, 199, 214, 0.88);
-    border-radius: 5px;
-    color: white;
+    background-color: #f6f6f6;
+    color: #444;
 }
 
 select {
