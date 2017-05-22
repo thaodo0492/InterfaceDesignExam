@@ -16,17 +16,20 @@
     <?php
         include('/header.php');
     ?>
-        <div>
+        <div class="main-background">
             <div class="testDivContainer">
                 <h1 class="disable-select">Available regions</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
-                    <a href="events.php"<span id="imgVesterbro" class="testDiv pointer"></span></a>
-                    <a href="events.php"<span id="imgNorrebro" class="testDiv pointer"></span></a>
-                    <a href="events.php"<span id="imgOsterbro" class="testDiv pointer"></span></a>
+                    <a href="events.php"><span id="imgVesterbro" class="testDiv pointer"></span>
+                    </a>
+                    <a href="events.php"><span id="imgNorrebro" class="testDiv pointer"></span>
+                    </a>
+                    <a href="events.php"><span id="imgOsterbro" class="testDiv pointer"></span>
+                    </a>
                 </div>
             </div>
             <div class="testDivContainer">
-                <h1 class="disable-select">List of events</h1>
+                <h1>LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div class="eventDiv">
                         <div id="imgBackend" class="eventImg">
@@ -44,7 +47,7 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -63,7 +66,7 @@
                                 <a>11:00-13:50</a>
                                 <a>35</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -82,7 +85,7 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -101,7 +104,7 @@
                                 <a>13:00-15:00</a>
                                 <a>26</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -120,7 +123,7 @@
                                 <a>18:00-22:00</a>
                                 <a>23</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                     <div class="eventDiv">
@@ -139,7 +142,7 @@
                                 <a>10:00-19:00</a>
                                 <a>52</a>
                             </div>
-                            <a href="singleEvent.php" class="pointer">DETAILS</a>
+                            <a class="pointer">DETAILS</a>
                         </div>
                     </div>
                 </div>
@@ -156,9 +159,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="javaScript.js"></script>
 
-                    <?php
-                        include('footer.php');
-                    ?>
+        <?php
+            include('footer.php');
+        ?>
 </body>
 
 </html>
