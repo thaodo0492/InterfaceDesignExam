@@ -37,9 +37,18 @@
 
             <script>
                 var sLink = "loginApi.php";
+                
+                
+                var checkInput1 = "admin";
+                
 
                 $("#btnLogin").click(function() {
-                    console.log("LOGGING...");
+                    var inputUser = $('#userInput').val();
+                    var inputPass = $('#passInput').val();
+                    console.log("LOGGING..."+"Input="+inputUser+"Variable="+checkInput1);
+                    if (inputUser == checkInput1) {
+                    
+                    
                     $.ajax({
                         "url": sLink,
                         "dataType": "text",
@@ -53,6 +62,8 @@
                         console.log(Data);
                         window.location.replace("index.php");
                     })
+                    
+                    }
                 });
 
             </script>
