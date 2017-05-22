@@ -34,7 +34,7 @@ hr {
 
 .bg {
     background-color: #dddddd;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
 }
 
 .pointer {
@@ -734,30 +734,35 @@ button.accordion.active:after {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
-    padding-bottom: 30px;
+    background-color: #dddddd;
+    //padding-bottom: 30px;
 }
 
 #partnerPDiv h1 {
+    margin: 0;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #444;
     font-size: 25px;
+    background-color: #f6f6f6;
 }
 
 #partnerDiv {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
+    background-color: #dddddd;
 }
 
 #partnerDiv h1 {
     //padding-top: 50px;
+    margin: 0;
+    padding-top: 50px;
     padding-bottom: 50px;
     color: #444;
     font-size: 25px;
     text-align: center;
+    background-color: #f6f6f6;
 }
 
 .partnerDivInnerContainer {
