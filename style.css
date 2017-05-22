@@ -103,6 +103,10 @@ hr {
 .container {
   min-height: 85vh; }
 
+/*event filter drop down fixed for media queries*/
+.cd-active {
+  z-index: 2000; }
+
 #wrapper {
   display: flex;
   align-items: center;
@@ -538,11 +542,22 @@ button.accordion.active:after {
     font-size: 25px;
     color: #444; }
 
+#map-bg {
+  background-color: #dddddd; }
+
 #map {
   width: 90vw;
   overflow: auto;
-  margin: 50px auto;
-  max-width: 1200px; }
+  margin: 0px auto;
+  max-width: 1200px;
+  padding-bottom: 50px; }
+
+#map h1 {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 25px;
+  color: #444;
+  text-align: center; }
 
 #map iframe {
   width: 100%; }
@@ -802,6 +817,7 @@ button.accordion.active:after {
 #singleEventDiv {
   min-height: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border-bottom: solid 1px #ddd;
   padding: 20px; }
@@ -1002,7 +1018,10 @@ footer p {
 
   .topnav a.icon {
     float: right;
-    display: block; } }
+    display: block; }
+
+  #eventDivLeft {
+    width: 100%; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
   .topnav.responsive {
