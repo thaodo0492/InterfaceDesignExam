@@ -80,7 +80,6 @@ hr {
 
 /*event filter drop down fixed for media queries*/
 
-
 .cd-active {
     z-index: 2000;
 }
@@ -808,6 +807,12 @@ button.accordion.active:after {
     //margin-bottom: 0px;
     margin-left: 20px;
     margin-right: 20px;
+    button {
+        height: 30px;
+        align-self: flex-end;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 .partnerIcon {
@@ -1120,8 +1125,6 @@ button.accordion.active:after {
 }
 
 //--------------------CREATE EVENT--------------------
-
-
 .imgEvent {
     background: url(images/Event.jpg);
     background-size: cover;
@@ -1218,11 +1221,9 @@ footer p {
     #eventDivLeft {
         width: 100%;
     }
-    
     #eventDivRight {
         width: 100%;
     }
-    
     #createEventContainer form {
         margin: 0;
     }

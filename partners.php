@@ -22,7 +22,7 @@
             <div class="partnerDivInnerContainer">
                 <?php
                 include('showPartners.php');
-            ?>
+                ?>
             </div>
         </div>
         <div id="partnerContactDiv">

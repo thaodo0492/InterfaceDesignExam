@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="testDivContainer">
-                <h1>LIST OF ALL EVENTS</h1>
+                <h1 class="disable-select">LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div class="eventDiv">
                         <div id="imgBackend" class="eventImg">
