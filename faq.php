@@ -4,8 +4,11 @@
 
 <head>
     <title>FAQ</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="javaScript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <?php
+        include('/imports.html');
+    ?>
 </head>
 
 <body>

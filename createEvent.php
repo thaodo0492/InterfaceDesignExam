@@ -3,10 +3,12 @@
 <html>
 
 <head>
-    <title>Create account</title>
+    <title>Create event</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <?php
+        include('/imports.html');
+    ?>
 </head>
 
 <body class="imgEvent">
