@@ -1120,6 +1120,8 @@ button.accordion.active:after {
 }
 
 //--------------------CREATE EVENT--------------------
+
+
 .imgEvent {
     background: url(images/Event.jpg);
     background-size: cover;
@@ -1219,6 +1221,10 @@ footer p {
     
     #eventDivRight {
         width: 100%;
+    }
+    
+    #createEventContainer form {
+    margin: 0;
     }
 }
 

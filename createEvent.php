@@ -16,7 +16,7 @@
     <?php
         include('/header.php');
     ?>
-        <div style="display: flex; justify-content:center; max-width: 1000px;
+        <div id="createEventContainer" style="display: flex; flex-wrap: wrap; justify-content:center; max-width: 1000px;
     margin: auto;">
             <form id="formCreateEvent" action="">
                 Event title: <input type="text" name="fname"><br> Location <select>
