@@ -33,7 +33,7 @@
             <div class="testDivContainer">
                 <h1 class="disable-select">LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
-                    <div class="eventDiv">
+                    <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -49,10 +49,15 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
-                    <div class="eventDiv">
+                    <div id="event2" class="eventDiv">
                         <div id="imgFrontend" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -68,10 +73,15 @@
                                 <a>11:00-13:50</a>
                                 <a>35</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
-                    <div class="eventDiv">
+                    <div id="event3" class="eventDiv">
                         <div id="imgOs" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -87,10 +97,15 @@
                                 <a>16:00-19:00</a>
                                 <a>48</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
-                    <div class="eventDiv">
+                    <div id="event4" class="eventDiv">
                         <div id="imgDatabase" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -106,10 +121,15 @@
                                 <a>13:00-15:00</a>
                                 <a>26</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
-                    <div class="eventDiv">
+                    <div id="event5" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -125,10 +145,15 @@
                                 <a>18:00-22:00</a>
                                 <a>23</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
-                    <div class="eventDiv">
+                    <div id="event6" class="eventDiv">
                         <div id="imgOs" class="eventImg">
                         </div>
                         <div class="eventPreviewDetails">
@@ -144,8 +169,13 @@
                                 <a>10:00-19:00</a>
                                 <a>52</a>
                             </div>
-                            <a class="pointer">DETAILS</a>
+                            <a href="singleEvent.php" class="pointer">DETAILS</a>
                         </div>
+                        <?php
+                        if(isset($_SESSION["loggedIn"])){
+                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
@@ -162,6 +192,36 @@
         <?php
             include('footer.php');
         ?>
+        
+        <script>
+            $('.delete').click(function(){
+        var elementD = $(this).parent().parent().attr('id');
+        $(this).parent().parent().hide();
+        localStorage.setItem(elementD, "hide");
+        });
+        //localStorage.getItem("delete");
+        
+        if (localStorage.getItem("event1") !== null) {
+            $('#event1').hide();
+        }
+        if (localStorage.getItem("event2") !== null) {
+            $('#event2').hide();
+        }
+        if (localStorage.getItem("event3") !== null) {
+            $('#event3').hide();
+        }
+        if (localStorage.getItem("event4") !== null) {
+            $('#event4').hide();
+        }
+        if (localStorage.getItem("event5") !== null) {
+            $('#event5').hide();
+        }
+        if (localStorage.getItem("event6") !== null) {
+            $('#event6').hide();
+        }
+        </script>
+        
+        
 </body>
 
 </html>

@@ -363,10 +363,12 @@ span {
 .eventPreviewDetails > a:hover {
   background-color: #455A64; }
 
-.eventPreviewDetails > a:active {
-  margin-top: 2px;
-  margin-bottom: 13px; }
-
+/*
+.eventPreviewDetails>a:active {
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+*/
 .eventPreviewDetailsColumnL {
   display: flex;
   flex-direction: column;
@@ -715,6 +717,13 @@ button.accordion.active:after {
     align-self: flex-end;
     margin-left: 5px;
     margin-right: 5px; }
+
+.deleteE {
+  display: flex;
+  justify-content: center; }
+  .deleteE button {
+    padding: 10px;
+    margin: 15px; }
 
 #partnerDanskebank {
   background: url(images/Danskebank.png);
