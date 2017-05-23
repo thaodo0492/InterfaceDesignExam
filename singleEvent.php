@@ -38,7 +38,7 @@
                             <a>11:00-13:50</a>
                         </div>
                         <div class="pointer">
-                            <p>REGISTER</p>
+                            <p onclick="myFunction()">REGISTER</p>
                         </div>
                     </div>
                 </div>
@@ -106,6 +106,17 @@
         <?php
         include('footer.php');
     ?>
+    
+    <script>
+        function myFunction(){
+            var x;
+            var name=prompt("Please enter your e-mail adress","");
+            if (name!=null){
+               x="You have made a reservation. An e-mail will be sent to you containing the relevant information";
+              alert(x);
+            }
+        }
+    </script>
 </body>
 
 </html>
