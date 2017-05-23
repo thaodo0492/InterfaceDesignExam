@@ -80,4 +80,3 @@ console.log("LOGGING...");
         window.location.replace("index.php");
     })
 });
-*/
