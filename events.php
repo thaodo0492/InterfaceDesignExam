@@ -50,10 +50,6 @@
                 </div>
             </div>
 
-
-
-
-
             <div class="testDivContainer">
                 <h1>LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
@@ -186,7 +182,6 @@
         ?>
             <script type="text/javascript">
                 $(function() {
-
                     $('#cd-dropdown').dropdown();
                     $('#cd-dropdown1').dropdown();
                     $('#cd-dropdown2').dropdown();
