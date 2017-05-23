@@ -1127,19 +1127,27 @@ button.accordion.active:after {
 //--------------------SINGLE PARTNER--------------------
 #single-partner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     padding-top: 50px;
-    padding-bottom: 50px;
     margin: 0 auto;
-    max-width: 1200px;
 }
 
-#singlePartner-img img {
+#single-partner img {
     max-width: 500px;
+    align-self: center;
 }
 
-.js .inputfile {
+#editPartner {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    color: #444;
+}
+
+.inputfile {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -1149,9 +1157,8 @@ button.accordion.active:after {
 }
 
 .inputfile+label {
-    max-width: 80%;
     font-size: 1.25rem;
-    /* 20px */
+    margin-bottom: 30px;
     font-weight: 700;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1159,10 +1166,9 @@ button.accordion.active:after {
     display: inline-block;
     overflow: hidden;
     padding: 0.625rem 1.25rem;
-    /* 10px 20px */
 }
 
-.no-js .inputfile+label {
+.inputfile+label {
     display: none;
 }
 
@@ -1176,7 +1182,7 @@ button.accordion.active:after {
     width: 1em;
     height: 1em;
     vertical-align: middle;
-    fill: currentColor;
+    fill: #FFC107;
     margin-top: -0.25em;
     /* 4px */
     margin-right: 0.25em;
@@ -1184,18 +1190,21 @@ button.accordion.active:after {
 }
 
 .inputfile-1+label {
-    color: #f1e5e6;
+    color: #ddd;
     display: flex;
     flex-direction: row;
-    max-width: 250px;
+    width: 300px;
+    justify-content: center;
+    align-self: center;
     align-items: center;
-    background-color: #d3394c;
+    margin-top: 50px;
+    background-color: #00527D;
 }
 
 .inputfile-1:focus+label,
 .inputfile-1.has-focus+label,
 .inputfile-1+label:hover {
-    background-color: #722040;
+    background-color: #455A64;
 }
 
 //--------------------CREATE EVENT--------------------
