@@ -807,6 +807,7 @@ button.accordion.active:after {
     //margin-bottom: 0px;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 10px;
     button {
         height: 30px;
         align-self: flex-end;
@@ -821,6 +822,13 @@ button.accordion.active:after {
     //margin: 20px;
     margin-left: 40px;
     margin-right: 40px;
+    padding: 10px;
+    button {
+        height: 30px;
+        align-self: flex-end;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 #partnerDanskebank {

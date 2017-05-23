@@ -66,7 +66,7 @@
                 </div>
                 <div id="singleEventDetailsContainerR">
                     <div>
-                        <button class="btn btn-primary">Add to calender</button>
+                        <button class="btn btn-primary" onclick="addCalender()">Add to calender</button>
                     </div>
                     <div>
                         <p>Details</p>
@@ -115,6 +115,10 @@
                x="You have made a reservation. An e-mail will be sent to you containing the relevant information";
               alert(x);
             }
+        }
+        
+        function addCalender() {
+            window.location.replace("https://calendar.google.com/calendar/render?pli=1#main_7","_blank");
         }
     </script>
 </body>
