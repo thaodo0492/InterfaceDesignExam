@@ -36,9 +36,10 @@
         ?>
 
             <script>
+                var storedValueUser = localStorage.getItem("username");
+                var storedValuePass = localStorage.getItem("username");
+                
                 var sLink = "loginApi.php";
-                
-                
                 var checkInput1 = "admin";
                 
 
@@ -46,9 +47,25 @@
                     var inputUser = $('#userInput').val();
                     var inputPass = $('#passInput').val();
                     console.log("LOGGING..."+"Input="+inputUser+"Variable="+checkInput1);
+                    
+                    if (storedValueUser == inputUser && storedValuePass == inputPass) {
+                        $.ajax({
+                        "url": sLink,
+                        "dataType": "text",
+                        "method": "post",
+                        "cache": false
+                    }).done(function(Data) {
+                        //var result = JSON.parse(Data);
+                       /* if (Data == "success") {
+                            window.location.replace("http://stackoverflow.com");
+                        }*/
+                        console.log(Data);
+                        window.location.replace("index.php");
+                    })
+                    }else{
+                    
                     if (inputUser == checkInput1) {
-                    
-                    
+                                        
                     $.ajax({
                         "url": sLink,
                         "dataType": "text",
@@ -56,12 +73,14 @@
                         "cache": false
                     }).done(function(Data) {
                         //var result = JSON.parse(Data);
-                        if (Data == "success") {
+                       /* if (Data == "success") {
                             window.location.replace("http://stackoverflow.com");
-                        }
+                        }*/
                         console.log(Data);
                         window.location.replace("index.php");
                     })
+    
+                    }
                     
                     }
                 });

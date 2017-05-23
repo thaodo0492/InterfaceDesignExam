@@ -19,12 +19,23 @@
 
         <form id="formCreateAccount" action="">
             First name: <input type="text" name="fname"><br> Last name: <input type="text" name="lname"><br> Employee id: <input type="text" name="lname"><br> DOB: <input type="text" name="lname"><br> E-mail: <input type="text" name="lname"><br> Address: <input type="text" name="lname"><br> Phone: <input type="text" name="lname"><br> Date of employment: <input type="text" name="lname"><br>
-            <p id="checkInfo">Send info to employee e-mail <input type="checkbox" value="Bike"></p>
             <br>
+            Username: <input type="text" id="username" name="lname"><br>
+            Password: <input type="text" id="password" name="lname"><br>
+            <p id="checkInfo">Send info to employee e-mail <input type="checkbox" value="Bike"></p>
             <!-- <input type="submit" value="Submit">-->
-            <button type="button" id="btnSubmit" class="btn btn-primary postBtn">Submit</button>
+            <button type="button" onclick="store()" id="btnSubmit" class="btn btn-primary postBtn">Submit</button>
         </form>
 
+        <script>
+            function store(){
+            var inputUser = document.getElementById("username");
+            var inputPass = document.getElementById("password");
+            localStorage.setItem("username", inputUser.value);
+            localStorage.setItem("password", inputPass.value);
+            window.location.replace("login.php");
+            }
+        </script>
 
         <?php
         include('footer.php');
