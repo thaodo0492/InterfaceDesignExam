@@ -50,12 +50,17 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
 
 
 
 
                         <div class="testDivContainer">
                 <h1 class="disable-select">LIST OF ALL EVENTS</h1>
+=======
+            <div class="testDivContainer">
+                <h1>LIST OF ALL EVENTS</h1>
+>>>>>>> origin/master
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
@@ -216,7 +221,6 @@
         ?>
             <script type="text/javascript">
                 $(function() {
-
                     $('#cd-dropdown').dropdown();
                     $('#cd-dropdown1').dropdown();
                     $('#cd-dropdown2').dropdown();
