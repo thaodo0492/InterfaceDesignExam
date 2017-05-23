@@ -406,12 +406,15 @@ span {
 .eventPreviewDetails>a:hover {
     background-color: #455A64;
 }
+
+
 /*
 .eventPreviewDetails>a:active {
     margin-top: 2px;
     margin-bottom: 13px;
 }
 */
+
 .eventPreviewDetailsColumnL {
     display: flex;
     flex-direction: column;
@@ -835,8 +838,8 @@ button.accordion.active:after {
     display: flex;
     justify-content: center;
     button {
-    padding: 10px;
-    margin: 15px;
+        padding: 10px;
+        margin: 15px;
     }
 }
 
@@ -1141,6 +1144,21 @@ button.accordion.active:after {
     margin: 2px;
 }
 
+
+/************************Edit Single Event********************/
+
+#single-event {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#single-event img {
+    max-width: 1200px;
+    align-self: center;
+}
+
 //--------------------SINGLE PARTNER--------------------
 #single-partner {
     display: flex;
@@ -1242,6 +1260,14 @@ button.accordion.active:after {
     color: #444;
 }
 
+#formsEdit {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
 #formCreateEvent2 {
     display: flex;
     flex-direction: column;
@@ -1251,6 +1277,27 @@ button.accordion.active:after {
     padding: 50px;
     background-color: #f6f6f6;
     color: #444;
+}
+
+.formEditEvent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    color: #444;
+    span {
+        text-align: center;
+    }
+}
+
+.forms {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    select {
+        width: 55ch;
+    }
 }
 
 select {
@@ -1295,6 +1342,7 @@ footer p {
 
 .btn-primary {
     color: #fff;
+    margin-top: 30px;
     background-color: #00527D;
     border-color: #00527D;
 }

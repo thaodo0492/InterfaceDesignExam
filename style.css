@@ -969,6 +969,17 @@ button.accordion.active:after {
 #singleEventDetailsContainerR > div:last-child p {
   margin: 2px; }
 
+/************************Edit Single Event********************/
+#single-event {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 0 auto; }
+
+#single-event img {
+  max-width: 1200px;
+  align-self: center; }
+
 #single-partner {
   display: flex;
   justify-content: center;
@@ -1056,6 +1067,13 @@ button.accordion.active:after {
   background-color: #f6f6f6;
   color: #444; }
 
+#formsEdit {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: space-between;
+  margin: 50px auto; }
+
 #formCreateEvent2 {
   display: flex;
   flex-direction: column;
@@ -1065,6 +1083,23 @@ button.accordion.active:after {
   padding: 50px;
   background-color: #f6f6f6;
   color: #444; }
+
+.formEditEvent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  color: #444; }
+  .formEditEvent span {
+    text-align: center; }
+
+.forms {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .forms select {
+    width: 55ch; }
 
 select {
   margin: 12px 0; }
@@ -1100,6 +1135,7 @@ footer p {
 
 .btn-primary {
   color: #fff;
+  margin-top: 30px;
   background-color: #00527D;
   border-color: #00527D; }
 
