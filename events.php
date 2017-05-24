@@ -50,8 +50,8 @@
                 </div>
             </div>
 
-                        <div class="testDivContainer">
-                <h1 class="disable-select">LIST OF ALL EVENTS</h1>
+            <div class="testDivContainer">
+                <h1>LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
@@ -224,16 +224,16 @@
                 if ($('.cd-dropdown').hasClass('cd-active')) {
                     this.css('z-index:2000');
                 }
-                
-                
 
-                $('.delete').click(function(){
-                var elementD = $(this).parent().parent().attr('id');
-                $(this).parent().parent().hide();
-                localStorage.setItem(elementD, "hide");
+
+
+                $('.delete').click(function() {
+                    var elementD = $(this).parent().parent().attr('id');
+                    $(this).parent().parent().hide();
+                    localStorage.setItem(elementD, "hide");
                 });
                 //localStorage.getItem("delete");
-                
+
                 if (localStorage.getItem("event1") !== null) {
                     $('#event1').hide();
                 }
@@ -252,7 +252,6 @@
                 if (localStorage.getItem("event6") !== null) {
                     $('#event6').hide();
                 }
-
 
             </script>
 

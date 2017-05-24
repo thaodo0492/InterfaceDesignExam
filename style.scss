@@ -55,10 +55,6 @@ hr {
     cursor: pointer;
 }
 
-.disable-select {
-    @include user-select(none);
-}
-
 .margin-0-auto {
     margin: 0px auto;
 }

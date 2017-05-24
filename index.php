@@ -18,7 +18,7 @@
     ?>
         <div class="main-background">
             <div class="testDivContainer">
-                <h1 class="disable-select">AVAILABLE REGIONS</h1>
+                <h1>AVAILABLE REGIONS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
 
                     <a href="events.php" class="testDiv"><span id="imgVesterbro" class="testDiv pointer"></span>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="testDivContainer">
-                <h1 class="disable-select">LIST OF ALL EVENTS</h1>
+                <h1>LIST OF ALL EVENTS</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
@@ -192,36 +192,37 @@
         <?php
             include('footer.php');
         ?>
-        
-        <script>
-            $('.delete').click(function(){
-        var elementD = $(this).parent().parent().attr('id');
-        $(this).parent().parent().hide();
-        localStorage.setItem(elementD, "hide");
-        });
-        //localStorage.getItem("delete");
-        
-        if (localStorage.getItem("event1") !== null) {
-            $('#event1').hide();
-        }
-        if (localStorage.getItem("event2") !== null) {
-            $('#event2').hide();
-        }
-        if (localStorage.getItem("event3") !== null) {
-            $('#event3').hide();
-        }
-        if (localStorage.getItem("event4") !== null) {
-            $('#event4').hide();
-        }
-        if (localStorage.getItem("event5") !== null) {
-            $('#event5').hide();
-        }
-        if (localStorage.getItem("event6") !== null) {
-            $('#event6').hide();
-        }
-        </script>
-        
-        
+
+            <script>
+                $('.delete').click(function() {
+                    var elementD = $(this).parent().parent().attr('id');
+                    $(this).parent().parent().hide();
+                    localStorage.setItem(elementD, "hide");
+                });
+                //localStorage.getItem("delete");
+
+                if (localStorage.getItem("event1") !== null) {
+                    $('#event1').hide();
+                }
+                if (localStorage.getItem("event2") !== null) {
+                    $('#event2').hide();
+                }
+                if (localStorage.getItem("event3") !== null) {
+                    $('#event3').hide();
+                }
+                if (localStorage.getItem("event4") !== null) {
+                    $('#event4').hide();
+                }
+                if (localStorage.getItem("event5") !== null) {
+                    $('#event5').hide();
+                }
+                if (localStorage.getItem("event6") !== null) {
+                    $('#event6').hide();
+                }
+
+            </script>
+
+
 </body>
 
 </html>
