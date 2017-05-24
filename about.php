@@ -43,7 +43,7 @@
                             <img class="offerImage" src="images/Backend.jpg" alt="Offer Image">
                             <div class="offerText">We offer your company visibility to the right target audience, via presence at a variety of activities. Groups can easily see that you support their initiatives. </div>
                         </div>
-                        <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
+                        <a onclick="myFunction()" href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
                     </div>
                 </div>
                 <button id="partners" class="accordion">WANT TO BE OUR PARTNER? </button>
@@ -66,7 +66,7 @@
                             <img class="offerImage" src="images/Backend.jpg" alt="Offer Image">
                             <div class="offerText">We offer your company visibility to the right target audience, via presence at a variety of activities. Groups can easily see that you support their initiatives. </div>
                         </div>
-                        <a href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
+                        <a onclick="myFunction()" href="" class="button"><span class="symbol" >&#9993;</span>Contact Us</a>
 
                     </div>
                     <hr>
@@ -93,9 +93,24 @@
         <?php
             include('footer.php');
         ?>
+            <script>
+                function myFunction() {
+                    var x;
+                    var email = prompt("Please enter your e-mail address", "");
+                    var message = prompt("Please enter your message", "");
+                    if (email != null & message != null) {
+                        x = "Thank you for sending us a message. We will respond to your email as soon as possible containing the relevant information";
+                        alert(x);
+                    }
+                }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="javaScript.js"></script>
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+
+            </script>
+            <script src="javaScript.js"></script>
 
 </body>
 
