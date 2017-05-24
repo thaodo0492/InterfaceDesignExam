@@ -1,3 +1,5 @@
+/**********************************************************/
+
 function show(shown, hidden) {
     document.getElementById(shown).style.display = 'block';
     document.getElementById(hidden).style.display = 'none';
@@ -29,6 +31,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 /**************************INDEX*****************************/
+
 /* Adding and removing the "responsive" class to topnav on click */
 function TopnavOpen() {
     var x = document.getElementById("myTopnav");
@@ -42,6 +45,3 @@ function TopnavOpen() {
         x.parentNode.className = "topnavInnerContainer";
     }
 }
-/**********************************************************/
-
-

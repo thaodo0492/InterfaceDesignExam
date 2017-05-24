@@ -84,16 +84,6 @@ hr {
 .pointer {
   cursor: pointer; }
 
-.disable-select {
-  -webkit-backface-visibility: hidden;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default; }
-
 .margin-0-auto {
   margin: 0px auto; }
 
@@ -118,15 +108,15 @@ hr {
 
 #wrapper {
   /* flex( dir, wrap, justify, alignI, alignC)*/
-  /*
-  
-      @include flex();
-  
-  
-      @include flex($dir:column);
-      @include flex($justify:center);
-      
-  */
+    /*
+
+    @include flex();
+
+
+    @include flex($dir:column);
+    @include flex($justify:center);
+    
+*/
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
