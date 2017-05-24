@@ -21,7 +21,7 @@
             </div>
             <div id="faq-center">
                 <form>
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                    <input type="text" id="myInput" placeholder="Search for names..">
                 </form>
                 <h2> Frequently Asked Questions </h2>
                 <div id="page-one">
