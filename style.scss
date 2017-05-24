@@ -1,6 +1,21 @@
 @import 'helpers/sass-flexbox.scss';
 @import 'helpers/mixins.scss';
 @import 'helpers/_media-queries.scss';
+
+
+/*-----------  COLORS  ---------------*/
+$limedNav: #263238;
+$limedSpruce: #455a64;
+$mineShaft: #444444;
+$alto: #dddddd;
+$wildSand: #f6f6f6;
+
+$primaryColor: #00527D;
+$secondaryColor: #FFC107;
+
+
+
+
 //--------------------BODY--------------------
 *,
 *:after,
@@ -20,11 +35,11 @@ body {
 }
 
 .main-background {
-    background-color: #f6f6f6;
+    background-color: $wildSand;
 }
 
 .login-background {
-    background-color: #dddddd;
+    background-color: $alto;
 }
 
 hr {
@@ -37,7 +52,7 @@ hr {
 }
 
 .bg {
-    background-color: #dddddd;
+    background-color: $alto;
     //margin-bottom: 50px;
 }
 
@@ -46,11 +61,7 @@ hr {
 }
 
 .disable-select {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
+    @include user-select(none);
 }
 
 .margin-0-auto {
@@ -86,9 +97,17 @@ hr {
 
 //--------------------LOGIN--------------------
 #wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* flex( dir, wrap, justify, alignI, alignC)*/
+/*
+
+    @include flex();
+
+
+    @include flex($dir:column);
+    @include flex($justify:center);
+    
+*/
+@include flex($alignI: center,$justify: center);
     height: 84vh;
 }
 
@@ -97,24 +116,14 @@ hr {
     padding: 20px;
     border-radius: 5px;
     border: 1px #2c2c2c solid;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
 }
 
-
-/*
-#btnChange {
-  text-align: center;
-  padding-bottom: 40px;
-  width: 200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}*/
 
 #headline {
     text-align: center;
     font-size: 25px;
-    color: #444;
+    color: $mineShaft;
 }
 
 #loginDiv {
@@ -124,7 +133,6 @@ hr {
 }
 
 #createDiv {
-    //display: flex;
     width: 200px;
     margin: auto;
 }
@@ -132,7 +140,7 @@ hr {
 .infoLabel {
     margin: 0;
     margin-left: 5px;
-    color: #444;
+    color: $mineShaft;
     padding-bottom: 10px;
     //text-shadow: 1px 1px black;
 }
@@ -140,10 +148,8 @@ hr {
 //--------------------ADMIN NAV--------------------
 #adminNav {
     height: 50px;
-    background-color: #ddd;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: $alto;
+    @include flex($justify: space-around, $alignI: center);
 }
 
 #adminNav a {
@@ -152,28 +158,24 @@ hr {
 
 #adminNavHeading {
     color: #ffffff;
-    text-shadow: #444 1px 1px 5px;
+    text-shadow: $mineShaft 1px 1px 5px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 //--------------------CREATE ACCOUNT--------------------
 #formCreateAccount {
-    display: flex;
-    flex-direction: column;
+    @include flex($dir: column, $justify: center);
     width: 300px;
-    justify-content: center;
     margin: 50px auto;
     padding: 50px;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
     border-radius: 5px;
-    color: #444;
+    color: $mineShaft;
 }
 
 .imgEmployee {
-    background: url(images/Employee.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Employee\.jpg);
 }
 
 #checkInfo {
@@ -181,22 +183,18 @@ hr {
 }
 
 //--------------------ADD PARTNER--------------------
-#formAddAccount {
-    display: flex;
-    flex-direction: column;
+#formAddAccount {   
+    @include flex($dir:column, $justify:center);
     width: 300px;
-    justify-content: center;
     margin: 50px auto;
     padding: 50px;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
     border-radius: 5px;
-    color: #444;
+    color: $mineShaft;
 }
 
 .imgPartner {
-    background: url(images/Business.jpeg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Business\.jpeg);
 }
 
 //--------------------HEADER--------------------
@@ -204,21 +202,18 @@ hr {
 /* Add a black background color to the top navigation */
 
 .topnavContainer {
-    //display: flex;
     align-items: center;
-    background-color: #263238;
+    background-color: $limedNav;
     overflow: hidden;
     justify-content: space-between;
 }
 
 .topnavInnerContainer {
     max-width: 1200px;
-    display: flex;
+    @include flex($alignI: center,$justify: space-between);
     margin: auto;
-    align-items: center;
-    background-color: #263238;
+    background-color: $limedNav;
     overflow: hidden;
-    justify-content: space-between;
 }
 
 
@@ -227,7 +222,7 @@ hr {
 .topnav a {
     float: left;
     display: block;
-    color: #ddd;
+    color: $alto;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -238,7 +233,7 @@ hr {
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: $alto;
     color: black;
 }
 
@@ -283,18 +278,16 @@ span {
 }
 
 .testDivInnerContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex($justify: center,$wrap: wrap);
     min-height: 150px;
 }
 
 .testDivContainer:nth-child(2n) {
-    background-color: #dddddd;
+    background-color: $alto;
 }
 
 .testDivContainer:nth-child(2n) h1 {
-    color: #444;
+    color: $mineShaft;
     font-size: 25px;
 }
 
@@ -320,61 +313,37 @@ span {
 
 .testDivContainer h1 {
     text-align: center;
-    color: #444;
+    color: $mineShaft;
     font-size: 25px;
 }
 
 #imgVesterbro {
-    background: url(images/Vesterbro.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Vesterbro\.jpg);
 }
-
 #imgNorrebro {
-    background: url(images/Norrebro.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Norrebro\.jpg);
 }
-
 #imgOsterbro {
-    background: url(images/Osterbro.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Osterbro\.jpg);
 }
-
 #imgBackend {
-    background: url(images/Backend.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Backend\.jpg);
 }
-
 #imgFrontend {
-    background: url(images/Frontend.jpg);
-    background-size: cover;
-    background-position: center;
+    @include imgCoverCenter(Frontend\.jpg);
 }
 
 #imgOs {
-    background: url(images/Os.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
+    @include imgContainCenter(Os\.png);
 }
 
 #imgDatabase {
-    background: url(images/Database.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
+    @include imgContainCenter(Database\.png);
 }
 
 .eventPreviewDetails {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #f6f6f6;
+    @include flex($justify:center,$wrap:wrap);
+    background-color: $wildSand;
     font-weight: 600;
     width: 300px;
     border-radius: 0 0 5px 5px;
@@ -382,7 +351,7 @@ span {
 
 .eventPreviewDetails a {
     line-height: 2;
-    color: #444;
+    color: $mineShaft;
     font-size: 15px;
     text-decoration: none;
 }
@@ -404,7 +373,7 @@ span {
 }
 
 .eventPreviewDetails>a:hover {
-    background-color: #455A64;
+    background-color: $limedSpruce;
 }
 
 
@@ -416,9 +385,8 @@ span {
 */
 
 .eventPreviewDetailsColumnL {
-    display: flex;
-    flex-direction: column;
-    background-color: #f6f6f6;
+    @include flex($dir:column);
+    background-color: $wildSand;
     width: 46%;
     padding: 4px;
 }
@@ -429,10 +397,9 @@ span {
 }*/
 
 .eventPreviewDetailsColumnR {
-    display: flex;
-    flex-direction: column;
+    @include flex($dir:column);
     text-align: right;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
     width: 46%;
     padding: 4px;
 }
@@ -467,7 +434,7 @@ span {
 
 .text-about-title {
     font-size: 25px;
-    color: #444;
+    color: $mineShaft;
     text-align: center;
     max-width: 1000px;
     padding-top: 60px;
@@ -479,12 +446,12 @@ span {
     max-width: 1000px;
     padding-top: 25px;
     padding-bottom: 80px;
-    color: #444;
+    color: $mineShaft;
 }
 
 button.accordion {
     background-color: #00527D;
-    color: #ddd;
+    color: $alto;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -497,7 +464,7 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-    background-color: #455A64;
+    background-color: $limedSpruce;
 }
 
 button.accordion:after {
@@ -512,7 +479,7 @@ button.accordion.active:after {
 }
 
 .panel {
-    background-color: #f6f6f6;
+    background-color: $wildSand;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.9s ease-out;
@@ -521,22 +488,16 @@ button.accordion.active:after {
         max-width: 1000px;
         margin: 30px auto;
         font-size: 15px;
-        color: #444;
+        color: $mineShaft;
     }
 }
 
 #offerblock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($dir:column,$alignI:center,$justify:center);
 }
 
 .offers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex($dir:row,$wrap:wrap,$justify:center);
 }
 
 .offerIcons {
@@ -560,7 +521,7 @@ button.accordion.active:after {
 .offerText {
     text-align: justify;
     font-size: 15px;
-    color: #444;
+    color: $mineShaft;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 10px;
@@ -585,7 +546,7 @@ button.accordion.active:after {
     position: absolute;
     left: 0;
     width: 50px;
-    background-color: #263238;
+    background-color: $limedNav;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: 1px solid rgba(0, 0, 0, 0.15);
@@ -595,7 +556,7 @@ button.accordion.active:after {
 .button:hover span,
 .button.active span {
     //background-color: rgb(0, 102, 26);
-    background-color: #455A64;
+    background-color: $limedSpruce;
     color: white;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -611,18 +572,16 @@ button.accordion.active:after {
 }
 
 #mapblock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($dir:column,$alignI:center);
     h1 {
         margin-top: 50px;
         font-size: 25px;
-        color: #444;
+        color: $mineShaft;
     }
 }
 
 #map-bg {
-    background-color: #dddddd;
+    background-color: $alto;
 }
 
 #map {
@@ -637,7 +596,7 @@ button.accordion.active:after {
     margin-top: 50px;
     margin-bottom: 80px;
     font-size: 25px;
-    color: #444;
+    color: $mineShaft;
     text-align: center;
 }
 
@@ -661,9 +620,7 @@ button.accordion.active:after {
 }
 
 #faqImage {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex($dir:column,$alignI:center);
     background: url(images/faqq.jpg);
     filter: hue-rotate(230deg);
     background-size: cover;
@@ -674,7 +631,7 @@ button.accordion.active:after {
 }
 
 #faq-center {
-    display: flex;
+    @include flex();
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -683,7 +640,7 @@ button.accordion.active:after {
     max-width: 1200px;
     h2 {
         font-size: 25px;
-        color: #444;
+        color: $mineShaft;
         text-align: left;
     }
 }
@@ -700,15 +657,14 @@ button.accordion.active:after {
     /* Increase font-size */
     padding: 12px 20px 12px 40px;
     /* Add some padding */
-    border: 1px solid #ddd;
+    border: 1px solid $alto;
     /* Add a grey border */
     margin-bottom: 12px;
     /* Add some space below the input */
 }
 
 .page-button {
-    display: flex;
-    justify-content: center;
+    @include flex($justify:center);
     padding-bottom: 30px;
     button {
         padding-right: 10px;
@@ -720,11 +676,8 @@ button.accordion.active:after {
     text-align: center;
     background-color: #DFE2DB;
     padding-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f6f6f6;
+    @include flex($dir:row,$wrap:wrap,$justify:center);
+    background-color: $wildSand;
     padding-bottom: 40px;
 }
 
@@ -732,7 +685,7 @@ button.accordion.active:after {
     width: 100%;
     margin-bottom: 80px;
     font-size: 25px;
-    color: #444;
+    color: $mineShaft;
     padding-top: 50px;
 }
 
@@ -743,20 +696,15 @@ button.accordion.active:after {
 
 //--------------------SHOW PARTNERS--------------------
 .partnerContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex($dir:column,$justify:center,$wrap:wrap);
     min-height: 150px;
-    flex-direction: column;
     text-align: center;
-    //margin-bottom: 20px;
 }
 
 #partnerPDiv {
+    @include flex($dir:column);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #dddddd;
+    background-color: $alto;
     //padding-bottom: 30px;
 }
 
@@ -764,16 +712,15 @@ button.accordion.active:after {
     margin: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #444;
+    color: $mineShaft;
     font-size: 25px;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
 }
 
 #partnerDiv {
+    @include flex($dir:column);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #dddddd;
+    background-color: $alto;
 }
 
 #partnerDiv h1 {
@@ -781,33 +728,27 @@ button.accordion.active:after {
     margin: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #444;
+    color: $mineShaft;
     font-size: 25px;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
 }
 
 .partnerDivInnerContainer {
-    //padding: 20px;
 }
 
 .partnerDivInnerContainer div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex($dir:row,$justify:center,$wrap:wrap);
     min-height: 150px;
-    //margin: auto;
 }
 
 .partnerDivInnerContainer>div:first-child {
-    background: #ddd;
+    background: $alto;
 }
 
 .partnerIconP {
     height: 50px;
     width: 150px;
-    //margin-bottom: 0px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -835,8 +776,7 @@ button.accordion.active:after {
 }
 
 .deleteE {
-    display: flex;
-    justify-content: center;
+    @include flex($justify:center);
     button {
         padding: 10px;
         margin: 15px;
@@ -844,123 +784,63 @@ button.accordion.active:after {
 }
 
 #partnerDanskebank {
-    background: url(images/Danskebank.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(Danskebank\.png);
 }
 
 #partnerElgiganten {
-    background: url(images/Elgiganten.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(Elgiganten\.png);
 }
 
 #partnerNovo {
-    background: url(images/novo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(novo\.png);
 }
 
 #partnerRadio {
-    background: url(images/radio.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(radio\.png);
 }
 
 #partnerRadis {
-    background: url(images/radis.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(radis\.png);
 }
 
 #partnerMicro {
-    background: url(images/micro.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(micro\.png);
 }
 
 #partnerOti {
-    background: url(images/oti.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(oti\.png);
 }
 
 #partnerGra {
-    background: url(images/gra.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(gra\.png);
 }
 
 #partnerKk {
-    background: url(images/Kk.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(Kk\.jpg);
 }
 
 #partnerLogitech {
-    background: url(images/Logitech.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(Logitech\.svg);
 }
 
 #partnerMicrosoft {
-    background: url(images/Microsoft.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(Microsoft\.png);
 }
 
 #partnerTru {
-    background: url(images/tru.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(tru\.png);
 }
 
 #partnerBP {
-    background: url(images/BP.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(BP\.png);
 }
 
 #partnerSe {
-    background: url(images/se.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(se\.png);
 }
 
 #partnerPi {
-    background: url(images/pin.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    //background-color: white;
+@include partnerImg(pin\.png);
 }
 
 //--------------------PARTNERS--------------------
@@ -970,10 +850,7 @@ button.accordion.active:after {
 }
 
 .questionsDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include flex($alignI:center,$justify:center,$wrap:wrap);
 }
 
 .questionsDiv h4 {
@@ -981,29 +858,23 @@ button.accordion.active:after {
 }
 
 .questionsDiv h3 {
-    border: 2px solid #444;
+    border: 2px solid $mineShaft;
     border-radius: 50px;
     padding: 10px;
     /* color: white; */
-    background-color: #dddddd;
+    background-color: $alto;
 }
 
 //--------------------SINGLE EVENT--------------------
 #singleEventDiv {
     min-height: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-bottom: solid 1px #ddd;
+    @include flex($justify:center,$wrap:wrap);
+    border-bottom: solid 1px $alto;
     padding: 20px;
 }
 
 .eventDetails {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex($dir:column,$justify:center,$alignI:center,$wrap:wrap);
     width: 300px;
     flex-grow: 1;
 }
@@ -1014,104 +885,64 @@ button.accordion.active:after {
 }
 
 #imgFBshare {
-    background: url(images/ShareonFacebook.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
-    padding: 14px;
+    @include imgMediaShare(ShareonFacebook\.png,80%,14px);
 }
 
 #imgTwittershare {
-    background: url(images/ShareonTwitter.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
-    padding: 14px;
+    @include imgMediaShare(ShareonTwitter\.png,80%,14px);
+
 }
 
 #imgMessenger {
-    background: url(images/Messenger.png);
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
+    @include imgMediaShare(Messenger\.png,30%,auto);
 }
 
 #imgLinkedin {
-    background: url(images/LinkedIn.png);
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
+    @include imgMediaShare(LinkedIn\.png,30%,auto);
 }
 
 #imgEmail {
-    background: url(images/Email.png);
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
+    @include imgMediaShare(Email\.png,30%,auto);
 }
 
 #imgTravelMode {
-    background: url(images/mapTravelMode.jpg);
-    background-size: 250px;
+    @include imgMediaShare(mapTravelMode\.jpg,250px,auto);
     position: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 50px;
-    width: 100%;
     position: relative;
     bottom: 70px;
     margin: auto;
 }
 
 #eventShareDiv {
-    display: flex;
+    @include flex();
     width: 100%;
-    background-color: #ddd;
+    background-color: $alto;
     border: white solid 1px;
     border-radius: 5px;
 }
 
 #eventDivLeft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($dir:column,$alignI:center);
     width: 60%;
 }
 
 #eventDivRight {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex($dir:column,$justify:center,$alignI:center);
     width: 40%;
 }
 
 #eventDivRight div:last-child {
+    @include flex($alignI:center,$justify:center);
     height: 50px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ddd;
+    background-color: $alto;
     border: white solid 1px;
     border-radius: 5px;
 }
 
 #singleEventDetailsContainer {
     min-height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    @include flex($alignI:flex-start,$justify:space-around);
 }
 
 #singleEventDetailsContainerL {
@@ -1148,8 +979,7 @@ button.accordion.active:after {
 /************************Edit Single Event********************/
 
 #single-event {
-    display: flex;
-    justify-content: center;
+    @include flex($justify:center);
     padding-top: 30px;
     margin: 0 auto;
 }
@@ -1161,8 +991,7 @@ button.accordion.active:after {
 
 //--------------------SINGLE PARTNER--------------------
 #single-partner {
-    display: flex;
-    justify-content: center;
+    @include flex($justify:center);
     padding-top: 50px;
     margin: 0 auto;
 }
@@ -1173,13 +1002,12 @@ button.accordion.active:after {
 }
 
 #editPartner {
-    display: flex;
+    @include flex($dir:column);
     max-width: 1200px;
-    flex-direction: column;
     margin: 40px auto;
-    background-color: #f6f6f6;
+    background-color: $wildSand;
     border-radius: 5px;
-    color: #444;
+    color: $mineShaft;
 }
 
 .inputfile {
@@ -1225,13 +1053,10 @@ button.accordion.active:after {
 }
 
 .inputfile-1+label {
-    color: #ddd;
-    display: flex;
-    flex-direction: row;
+    color: $alto;
+    @include flex($dir:row,$justify:center,$alignI:center);
     width: 300px;
-    justify-content: center;
     align-self: center;
-    align-items: center;
     margin-top: 50px;
     background-color: #00527D;
 }
@@ -1239,7 +1064,7 @@ button.accordion.active:after {
 .inputfile-1:focus+label,
 .inputfile-1.has-focus+label,
 .inputfile-1+label:hover {
-    background-color: #455A64;
+    background-color: $limedSpruce;
 }
 
 //--------------------CREATE EVENT--------------------
@@ -1250,41 +1075,33 @@ button.accordion.active:after {
 }
 
 #formCreateEvent {
-    display: flex;
-    flex-direction: column;
+    @include flex($dir:column,$justify:flex-start);
     width: 300px;
-    justify-content: flex-start;
     margin: 50px 0;
     padding: 50px;
-    background-color: #f6f6f6;
-    color: #444;
+    background-color: $wildSand;
+    color: $mineShaft;
 }
 
 #formsEdit {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex($justify:space-between,$wrap:wrap);
     max-width: 1000px;
-    justify-content: space-between;
     margin: 50px auto;
 }
 
 #formCreateEvent2 {
-    display: flex;
-    flex-direction: column;
+    @include flex($dir:column,$justify:flex-start);
     width: 300px;
-    justify-content: flex-start;
     margin: 50px 0;
     padding: 50px;
-    background-color: #f6f6f6;
-    color: #444;
+    background-color: $wildSand;
+    color: $mineShaft;
 }
 
 .formEditEvent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #f6f6f6;
-    color: #444;
+    @include flex($dir:column,$wrap:wrap);
+    background-color: $wildSand;
+    color: $mineShaft;
     span {
         text-align: center;
     }
@@ -1292,9 +1109,7 @@ button.accordion.active:after {
 
 .forms {
     min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex($dir:column,$alignI:center);
     select {
         width: 55ch;
     }
@@ -1309,7 +1124,7 @@ footer {
     display: flex!important;
     justify-content: center;
     align-items: center;
-    background-color: #263238;
+    background-color: $limedNav;
     padding: 14px;
     font-size: 0.9em;
     color: #f2f2f2;
@@ -1327,17 +1142,12 @@ footer p {
     text-align: center;
     //white-space: nowrap;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     border: 1px solid transparent;
     padding: .5rem 1rem;
     font-size: 1rem;
     border-radius: 5px;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    @include transition(all .2s ease-in-out);
+    @include user-select(none);
 }
 
 .btn-primary {
@@ -1349,8 +1159,8 @@ footer p {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #455A64;
-    border-color: #455A64;
+    background-color: $limedSpruce;
+    border-color: $limedSpruce;
 }
 
 //--------------------MEDIA Q--------------------
@@ -1405,16 +1215,14 @@ footer p {
     margin-top: 0px;
     padding-top: 50px;
     font-size: 25px;
-    color: #444;
+    color: $mineShaft;
     text-align: center;
 }
 
 #filterbuttons {
-    display: flex;
+    @include flex($justify:center,$wrap:wrap);
     margin-top: 40px;
     margin-bottom: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 
@@ -1426,7 +1234,7 @@ footer p {
     width: 200px;
     margin: 20px auto;
     display: block;
-    border: 1px solid #ddd;
+    border: 1px solid $alto;
     margin: 3%;
 }
 
@@ -1434,7 +1242,7 @@ footer p {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    color: #444;
+    color: $mineShaft;
     font-weight: 700;
     text-align: center;
     font-size: 15px;
@@ -1456,7 +1264,7 @@ footer p {
     padding: 10px;
     height: 70%;
     line-height: 24px;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid $alto;
 }
 
 .cd-dropdown.cd-active>span:after {
@@ -1482,20 +1290,14 @@ footer p {
     line-height: 60px;
     //padding: 0 30px 0 75px;
     display: block;
-    color: #444;
+    color: $mineShaft;
     cursor: pointer;
     font-weight: 500;
 }
 
 .cd-dropdown>span,
 .cd-dropdown ul li span {
-    -webkit-backface-visibility: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    @include user-select(none);
 }
 
 .cd-dropdown>span span[class^="icon-"],
@@ -1507,37 +1309,17 @@ footer p {
 /* Select fallback styling */
 
 .cd-dropdown {
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    -ms-perspective: 800px;
-    perspective: 800px;
+    @include perspective(800px);
 }
 
 .cd-dropdown>span {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    -o-transform-origin: 50% 0%;
-    -ms-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-transition: -webkit-transform .3s;
-    -moz-transition: -moz-transform .3s;
-    -o-transition: -o-transform .3s;
-    -ms-transition: -ms-transform .3s;
-    transition: transform .3s;
+    @include transform-style(preserve-3d);
+    @include transform-origin(50% 0%);
+    @include transitionTransform(.3s);
 }
 
 .cd-dropdown>span:active {
-    -webkit-transform: rotateX(60deg);
-    -moz-transform: rotateX(60deg);
-    -o-transform: rotateX(60deg);
-    -ms-transform: rotateX(60deg);
-    transform: rotateX(60deg);
+    @include transform-rotateX(60deg);
 }
 
 .cd-dropdown>span,
@@ -1566,11 +1348,7 @@ footer p {
 }
 
 .cd-active.cd-dropdown ul li span {
-    -webkit-transition: all 0.2s linear 0s;
-    -moz-transition: all 0.2s linear 0s;
-    -ms-transition: all 0.2s linear 0s;
-    -o-transition: all 0.2s linear 0s;
-    transition: all 0.2s linear 0s;
+    @include transition(all 0.2s linear 0s);
 }
 
 .cd-active.cd-dropdown ul li span:hover {

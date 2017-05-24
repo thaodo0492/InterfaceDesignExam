@@ -1,35 +1,114 @@
-@mixin box-sizing($type){
-	-webkit-box-sizing: $type;
-	-moz-box-sizing: $type;
-	-ms-box-sizing: $type;
-	box-sizing: $type;
+/*# sourceMappingURL=mixins.css.map */
+
+/* MIXINS FOR MULTIPLE BROWSER SUPPORT */
+
+@mixin user-select($option) {
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: $option;
+    -webkit-user-select: $option;
+    -khtml-user-select: $option;
+    -moz-user-select: $option;
+    -ms-user-select: $option;
+    user-select: $option;
+    cursor: default;
 }
-@mixin inputRange(){
-		float:left;
-		position:absolute;
-		left:0;
-      -webkit-appearance: none;
-      margin: 10px 0;
-      width: 100px;
+
+@mixin perspective($value){
+    -webkit-perspective: $value;
+    -moz-perspective: $value;
+    -o-perspective: $value;
+    -ms-perspective: $value;
+    perspective: $value;
 }
-@mixin inputRangeFocus(){
-      outline: none;
+
+@mixin transform-style($option){
+    -webkit-transform-style: $option;
+    -moz-transform-style: $option;
+    -o-transform-style: $option;
+    -ms-transform-style: $option;
+    transform-style: $option;
 }
-@mixin inputRangeRunnableTrack(){
-      height: 4px;
-      background: cD($secondary-color,10%);
+
+@mixin transform-origin($value){
+    -webkit-transform-origin: $value;
+    -moz-transform-origin: $value;
+    -o-transform-origin: $value;
+    -ms-transform-origin: $value;
+    transform-origin: $value;
 }
-@mixin inputRangeSliderThumb(){
-      height: 14px;
-      width: 14px;
-      border-radius: 17px;
-      border:3px solid cD($secondary-color,10%);
-      -webkit-appearance: none;
-      margin-top: -5px;
+
+@mixin transform-rotateX($value){
+    -webkit-transform: rotateX($value);
+    -moz-transform: rotateX($value);
+    -o-transform: rotateX($value);
+    -ms-transform: rotateX($value);
+    transform: rotateX($value);
 }
-@mixin inputRangeSliderThumbNone(){
-      border:none;
+
+@mixin transitionTransform($time){
+    -webkit-transition: -webkit-transform $time;
+    -moz-transition: -moz-transform $time;
+    -o-transition: -o-transform $time;
+    -ms-transition: -ms-transform $time;
+    transition: transform $time;
 }
-@mixin inputRangeRunnableTrackDirect(){
-      background: cL($accent-color,10%);
+
+@mixin transition($value){
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    transition: $value;
 }
+
+
+
+
+/*----- IMAGE MIXINS ------*/
+
+
+@mixin imgMediaShare($imgName, $bgSize, $padding){
+    background: url(images/$imgName);
+    background-size: $bgSize;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    padding: $padding;
+}
+
+@mixin partnerImg($imgName){
+    background: url(images/$imgName);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin imgCoverCenter($imgName){
+      background: url(images/$imgName);
+      background-size: cover;
+      background-position: center;
+}
+
+@mixin imgContainCenter($imgName){
+    background: url(images/$imgName);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+
+
+
+
+/*----- FLEX CREATION SUPER MIXIN -----*/
+
+@mixin flex($dir: row,$wrap: nowrap,$justify: flex-start,$alignI: stretch,$alignC: stretch){
+      display:flex;
+      flex-direction: $dir;
+      flex-wrap: $wrap;
+      justify-content: $justify;
+      align-items: $alignI;
+      align-content: $alignC;
+}
+/* flex( direction, wrap, justify, alignItem, alignContent)*/

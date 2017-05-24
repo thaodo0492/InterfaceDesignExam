@@ -44,6 +44,12 @@
 /*
     Align content
  */
+/*# sourceMappingURL=mixins.css.map */
+/* MIXINS FOR MULTIPLE BROWSER SUPPORT */
+/*----- IMAGE MIXINS ------*/
+/*----- FLEX CREATION SUPER MIXIN -----*/
+/* flex( direction, wrap, justify, alignItem, alignContent)*/
+/*-----------  COLORS  ---------------*/
 *,
 *:after,
 *:before {
@@ -79,7 +85,10 @@ hr {
   cursor: pointer; }
 
 .disable-select {
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -108,9 +117,22 @@ hr {
   z-index: 2000; }
 
 #wrapper {
+  /* flex( dir, wrap, justify, alignI, alignC)*/
+  /*
+  
+      @include flex();
+  
+  
+      @include flex($dir:column);
+      @include flex($justify:center);
+      
+  */
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  align-content: stretch;
   height: 84vh; }
 
 #indexContent {
@@ -120,19 +142,10 @@ hr {
   border: 1px #2c2c2c solid;
   background-color: #f6f6f6; }
 
-/*
-#btnChange {
-  text-align: center;
-  padding-bottom: 40px;
-  width: 200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-}*/
 #headline {
   text-align: center;
   font-size: 25px;
-  color: #444; }
+  color: #444444; }
 
 #loginDiv {
   width: 200px;
@@ -146,38 +159,44 @@ hr {
 .infoLabel {
   margin: 0;
   margin-left: 5px;
-  color: #444;
+  color: #444444;
   padding-bottom: 10px; }
 
 #adminNav {
   height: 50px;
-  background-color: #ddd;
+  background-color: #dddddd;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  align-content: stretch; }
 
 #adminNav a {
   text-decoration: none; }
 
 #adminNavHeading {
   color: #ffffff;
-  text-shadow: #444 1px 1px 5px;
+  text-shadow: #444444 1px 1px 5px;
   font-weight: 600;
   letter-spacing: 1px; }
 
 #formCreateAccount {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  width: 300px;
   margin: 50px auto;
   padding: 50px;
   background-color: #f6f6f6;
   border-radius: 5px;
-  color: #444; }
+  color: #444444; }
 
 .imgEmployee {
-  background: url(images/Employee.jpg);
+  background: url(images/Employee\.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -187,16 +206,19 @@ hr {
 #formAddAccount {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  width: 300px;
   margin: 50px auto;
   padding: 50px;
   background-color: #f6f6f6;
   border-radius: 5px;
-  color: #444; }
+  color: #444444; }
 
 .imgPartner {
-  background: url(images/Business.jpeg);
+  background: url(images/Business\.jpeg);
   background-size: cover;
   background-position: center; }
 
@@ -210,17 +232,20 @@ hr {
 .topnavInnerContainer {
   max-width: 1200px;
   display: flex;
-  margin: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
+  align-content: stretch;
+  margin: auto;
   background-color: #263238;
-  overflow: hidden;
-  justify-content: space-between; }
+  overflow: hidden; }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: #ddd;
+  color: #dddddd;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -228,7 +253,7 @@ hr {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #dddddd;
   color: black; }
 
 #navLogo {
@@ -263,15 +288,18 @@ span {
 
 .testDivInnerContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   min-height: 150px; }
 
 .testDivContainer:nth-child(2n) {
   background-color: #dddddd; }
 
 .testDivContainer:nth-child(2n) h1 {
-  color: #444;
+  color: #444444;
   font-size: 25px; }
 
 .testDiv {
@@ -291,52 +319,55 @@ span {
 
 .testDivContainer h1 {
   text-align: center;
-  color: #444;
+  color: #444444;
   font-size: 25px; }
 
 #imgVesterbro {
-  background: url(images/Vesterbro.jpg);
+  background: url(images/Vesterbro\.jpg);
   background-size: cover;
   background-position: center; }
 
 #imgNorrebro {
-  background: url(images/Norrebro.jpg);
+  background: url(images/Norrebro\.jpg);
   background-size: cover;
   background-position: center; }
 
 #imgOsterbro {
-  background: url(images/Osterbro.jpg);
+  background: url(images/Osterbro\.jpg);
   background-size: cover;
   background-position: center; }
 
 #imgBackend {
-  background: url(images/Backend.jpg);
+  background: url(images/Backend\.jpg);
   background-size: cover;
   background-position: center; }
 
 #imgFrontend {
-  background: url(images/Frontend.jpg);
+  background: url(images/Frontend\.jpg);
   background-size: cover;
   background-position: center; }
 
 #imgOs {
-  background: url(images/Os.png);
+  background: url(images/Os\.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white; }
 
 #imgDatabase {
-  background: url(images/Database.png);
-  background-size: 50%;
+  background: url(images/Database\.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: white; }
 
 .eventPreviewDetails {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   background-color: #f6f6f6;
   font-weight: 600;
   width: 300px;
@@ -344,7 +375,7 @@ span {
 
 .eventPreviewDetails a {
   line-height: 2;
-  color: #444;
+  color: #444444;
   font-size: 15px;
   text-decoration: none; }
 
@@ -361,7 +392,7 @@ span {
   text-align: center; }
 
 .eventPreviewDetails > a:hover {
-  background-color: #455A64; }
+  background-color: #455a64; }
 
 /*
 .eventPreviewDetails>a:active {
@@ -372,6 +403,10 @@ span {
 .eventPreviewDetailsColumnL {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   background-color: #f6f6f6;
   width: 46%;
   padding: 4px; }
@@ -382,6 +417,10 @@ span {
 .eventPreviewDetailsColumnR {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   text-align: right;
   background-color: #f6f6f6;
   width: 46%;
@@ -412,7 +451,7 @@ span {
 
 .text-about-title {
   font-size: 25px;
-  color: #444;
+  color: #444444;
   text-align: center;
   max-width: 1000px;
   padding-top: 60px; }
@@ -423,11 +462,11 @@ span {
   max-width: 1000px;
   padding-top: 25px;
   padding-bottom: 80px;
-  color: #444; }
+  color: #444444; }
 
 button.accordion {
   background-color: #00527D;
-  color: #ddd;
+  color: #dddddd;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -439,7 +478,7 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-  background-color: #455A64; }
+  background-color: #455a64; }
 
 button.accordion:after {
   content: '\002B';
@@ -460,19 +499,23 @@ button.accordion.active:after {
     max-width: 1000px;
     margin: 30px auto;
     font-size: 15px;
-    color: #444; }
+    color: #444444; }
 
 #offerblock {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  align-content: stretch; }
 
 .offers {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch; }
 
 .offerIcons {
   width: 20%;
@@ -492,7 +535,7 @@ button.accordion.active:after {
 .offerText {
   text-align: justify;
   font-size: 15px;
-  color: #444;
+  color: #444444;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 10px;
@@ -523,7 +566,7 @@ button.accordion.active:after {
 
 .button:hover span,
 .button.active span {
-  background-color: #455A64;
+  background-color: #455a64;
   color: white;
   border-right: 1px solid rgba(0, 0, 0, 0.3); }
 
@@ -538,11 +581,14 @@ button.accordion.active:after {
 #mapblock {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch; }
   #mapblock h1 {
     margin-top: 50px;
     font-size: 25px;
-    color: #444; }
+    color: #444444; }
 
 #map-bg {
   background-color: #dddddd; }
@@ -558,7 +604,7 @@ button.accordion.active:after {
   margin-top: 50px;
   margin-bottom: 80px;
   font-size: 25px;
-  color: #444;
+  color: #444444;
   text-align: center; }
 
 #map iframe {
@@ -578,8 +624,11 @@ button.accordion.active:after {
 
 #faqImage {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
   background: url(images/faqq.jpg);
   filter: hue-rotate(230deg);
   background-size: cover;
@@ -590,6 +639,11 @@ button.accordion.active:after {
 
 #faq-center {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -598,7 +652,7 @@ button.accordion.active:after {
   max-width: 1200px; }
   #faq-center h2 {
     font-size: 25px;
-    color: #444;
+    color: #444444;
     text-align: left; }
 
 #myInput {
@@ -613,14 +667,18 @@ button.accordion.active:after {
   /* Increase font-size */
   padding: 12px 20px 12px 40px;
   /* Add some padding */
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   /* Add a grey border */
   margin-bottom: 12px;
   /* Add some space below the input */ }
 
 .page-button {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   padding-bottom: 30px; }
   .page-button button {
     padding-right: 10px; }
@@ -633,6 +691,8 @@ button.accordion.active:after {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   background-color: #f6f6f6;
   padding-bottom: 40px; }
 
@@ -640,7 +700,7 @@ button.accordion.active:after {
   width: 100%;
   margin-bottom: 80px;
   font-size: 25px;
-  color: #444;
+  color: #444444;
   padding-top: 50px; }
 
 #contactBtn {
@@ -649,37 +709,47 @@ button.accordion.active:after {
 
 .partnerContainer {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-height: 150px;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  min-height: 150px;
   text-align: center; }
 
 #partnerPDiv {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
   background-color: #dddddd; }
 
 #partnerPDiv h1 {
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
-  color: #444;
+  color: #444444;
   font-size: 25px;
   background-color: #f6f6f6; }
 
 #partnerDiv {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
   background-color: #dddddd; }
 
 #partnerDiv h1 {
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
-  color: #444;
+  color: #444444;
   font-size: 25px;
   text-align: center;
   background-color: #f6f6f6; }
@@ -687,12 +757,14 @@ button.accordion.active:after {
 .partnerDivInnerContainer div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   min-height: 150px; }
 
 .partnerDivInnerContainer > div:first-child {
-  background: #ddd; }
+  background: #dddddd; }
 
 .partnerIconP {
   height: 50px;
@@ -720,97 +792,101 @@ button.accordion.active:after {
 
 .deleteE {
   display: flex;
-  justify-content: center; }
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch; }
   .deleteE button {
     padding: 10px;
     margin: 15px; }
 
 #partnerDanskebank {
-  background: url(images/Danskebank.png);
+  background: url(images/Danskebank\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerElgiganten {
-  background: url(images/Elgiganten.png);
+  background: url(images/Elgiganten\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerNovo {
-  background: url(images/novo.png);
+  background: url(images/novo\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerRadio {
-  background: url(images/radio.png);
+  background: url(images/radio\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerRadis {
-  background: url(images/radis.png);
+  background: url(images/radis\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerMicro {
-  background: url(images/micro.png);
+  background: url(images/micro\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerOti {
-  background: url(images/oti.png);
+  background: url(images/oti\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerGra {
-  background: url(images/gra.png);
+  background: url(images/gra\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerKk {
-  background: url(images/Kk.jpg);
+  background: url(images/Kk\.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerLogitech {
-  background: url(images/Logitech.svg);
+  background: url(images/Logitech\.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerMicrosoft {
-  background: url(images/Microsoft.png);
+  background: url(images/Microsoft\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerTru {
-  background: url(images/tru.png);
+  background: url(images/tru\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerBP {
-  background: url(images/BP.png);
+  background: url(images/BP\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerSe {
-  background: url(images/se.png);
+  background: url(images/se\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
 
 #partnerPi {
-  background: url(images/pin.png);
+  background: url(images/pin\.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
@@ -821,15 +897,17 @@ button.accordion.active:after {
 
 .questionsDiv {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap; }
+  align-items: center;
+  align-content: stretch; }
 
 .questionsDiv h4 {
   width: 100%; }
 
 .questionsDiv h3 {
-  border: 2px solid #444;
+  border: 2px solid #444444;
   border-radius: 50px;
   padding: 10px;
   /* color: white; */
@@ -838,17 +916,21 @@ button.accordion.active:after {
 #singleEventDiv {
   min-height: 150px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: solid 1px #ddd;
+  align-items: stretch;
+  align-content: stretch;
+  border-bottom: solid 1px #dddddd;
   padding: 20px; }
 
 .eventDetails {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
   width: 300px;
   flex-grow: 1; }
 
@@ -857,7 +939,7 @@ button.accordion.active:after {
   font-size: 1.2em; }
 
 #imgFBshare {
-  background: url(images/ShareonFacebook.png);
+  background: url(images/ShareonFacebook\.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -866,7 +948,7 @@ button.accordion.active:after {
   padding: 14px; }
 
 #imgTwittershare {
-  background: url(images/ShareonTwitter.png);
+  background: url(images/ShareonTwitter\.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -875,76 +957,96 @@ button.accordion.active:after {
   padding: 14px; }
 
 #imgMessenger {
-  background: url(images/Messenger.png);
+  background: url(images/Messenger\.png);
   background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-  width: 100%; }
-
-#imgLinkedin {
-  background: url(images/LinkedIn.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-  width: 100%; }
-
-#imgEmail {
-  background: url(images/Email.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-  width: 100%; }
-
-#imgTravelMode {
-  background: url(images/mapTravelMode.jpg);
-  background-size: 250px;
-  position: fixed;
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
   width: 100%;
+  padding: auto; }
+
+#imgLinkedin {
+  background: url(images/LinkedIn\.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  padding: auto; }
+
+#imgEmail {
+  background: url(images/Email\.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  padding: auto; }
+
+#imgTravelMode {
+  background: url(images/mapTravelMode\.jpg);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 100%;
+  padding: auto;
+  position: fixed;
   position: relative;
   bottom: 70px;
   margin: auto; }
 
 #eventShareDiv {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   width: 100%;
-  background-color: #ddd;
+  background-color: #dddddd;
   border: white solid 1px;
   border-radius: 5px; }
 
 #eventDivLeft {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  align-content: stretch;
   width: 60%; }
 
 #eventDivRight {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  align-content: stretch;
   width: 40%; }
 
 #eventDivRight div:last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
   height: 50px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ddd;
+  background-color: #dddddd;
   border: white solid 1px;
   border-radius: 5px; }
 
 #singleEventDetailsContainer {
   min-height: 200px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: flex-start; }
+  align-items: flex-start;
+  align-content: stretch; }
 
 #singleEventDetailsContainerL {
   width: 60%; }
@@ -972,7 +1074,11 @@ button.accordion.active:after {
 /************************Edit Single Event********************/
 #single-event {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   padding-top: 30px;
   margin: 0 auto; }
 
@@ -982,7 +1088,11 @@ button.accordion.active:after {
 
 #single-partner {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
   padding-top: 50px;
   margin: 0 auto; }
 
@@ -992,12 +1102,16 @@ button.accordion.active:after {
 
 #editPartner {
   display: flex;
-  max-width: 1200px;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  max-width: 1200px;
   margin: 40px auto;
   background-color: #f6f6f6;
   border-radius: 5px;
-  color: #444; }
+  color: #444444; }
 
 .inputfile {
   width: 0.1px;
@@ -1037,20 +1151,22 @@ button.accordion.active:after {
   /* 4px */ }
 
 .inputfile-1 + label {
-  color: #ddd;
+  color: #dddddd;
   display: flex;
   flex-direction: row;
-  width: 300px;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-self: center;
   align-items: center;
+  align-content: stretch;
+  width: 300px;
+  align-self: center;
   margin-top: 50px;
   background-color: #00527D; }
 
 .inputfile-1:focus + label,
 .inputfile-1.has-focus + label,
 .inputfile-1 + label:hover {
-  background-color: #455A64; }
+  background-color: #455a64; }
 
 .imgEvent {
   background: url(images/Event.jpg);
@@ -1060,36 +1176,48 @@ button.accordion.active:after {
 #formCreateEvent {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  width: 300px;
   margin: 50px 0;
   padding: 50px;
   background-color: #f6f6f6;
-  color: #444; }
+  color: #444444; }
 
 #formsEdit {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1000px;
   justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  max-width: 1000px;
   margin: 50px auto; }
 
 #formCreateEvent2 {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  width: 300px;
   margin: 50px 0;
   padding: 50px;
   background-color: #f6f6f6;
-  color: #444; }
+  color: #444444; }
 
 .formEditEvent {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   background-color: #f6f6f6;
-  color: #444; }
+  color: #444444; }
   .formEditEvent span {
     text-align: center; }
 
@@ -1097,7 +1225,10 @@ button.accordion.active:after {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch; }
   .forms select {
     width: 55ch; }
 
@@ -1121,17 +1252,23 @@ footer p {
   line-height: 1.25;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   border: 1px solid transparent;
   padding: .5rem 1rem;
   font-size: 1rem;
   border-radius: 5px;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default; }
 
 .btn-primary {
   color: #fff;
@@ -1141,8 +1278,8 @@ footer p {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #455A64;
-  border-color: #455A64; }
+  background-color: #455a64;
+  border-color: #455a64; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
@@ -1181,15 +1318,18 @@ footer p {
   margin-top: 0px;
   padding-top: 50px;
   font-size: 25px;
-  color: #444;
+  color: #444444;
   text-align: center; }
 
 #filterbuttons {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 /*******************DROP DOWN BUTTONS**********************/
 .cd-dropdown,
@@ -1198,14 +1338,14 @@ footer p {
   width: 200px;
   margin: 20px auto;
   display: block;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   margin: 3%; }
 
 .cd-dropdown > span {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  color: #444;
+  color: #444444;
   font-weight: 700;
   text-align: center;
   font-size: 15px;
@@ -1225,7 +1365,7 @@ footer p {
   padding: 10px;
   height: 70%;
   line-height: 24px;
-  border-left: 1px solid #ddd; }
+  border-left: 1px solid #dddddd; }
 
 .cd-dropdown.cd-active > span:after {
   content: '\25B2'; }
@@ -1246,7 +1386,7 @@ footer p {
   background: #fff;
   line-height: 60px;
   display: block;
-  color: #444;
+  color: #444444;
   cursor: pointer;
   font-weight: 500; }
 
@@ -1258,7 +1398,8 @@ footer p {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  cursor: default; }
 
 .cd-dropdown > span span[class^="icon-"],
 .cd-dropdown > span span[class*=" icon-"] {
@@ -1283,11 +1424,11 @@ footer p {
   -o-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
-  -webkit-transition: -webkit-transform .3s;
-  -moz-transition: -moz-transform .3s;
-  -o-transition: -o-transform .3s;
-  -ms-transition: -ms-transform .3s;
-  transition: transform .3s; }
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s; }
 
 .cd-dropdown > span:active {
   -webkit-transform: rotateX(60deg);
