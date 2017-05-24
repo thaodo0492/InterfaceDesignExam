@@ -20,7 +20,7 @@
             <div id="singleEventContainer">
                 <div id="singleEventDiv" class="content">
                     <div id="eventDivLeft">
-                        <div id="imgFrontend" class="testDiv pointer" style="height: 300px!important; width: 100%!important;">
+                        <div id="imgBackend" class="testDiv pointer" style="height: 300px!important; width: 100%!important;">
                         </div>
                         <div id="eventShareDiv">
                             <div id="imgFBshare" class="shareImg pointer"></div>
@@ -32,10 +32,9 @@
                     </div>
                     <div id="eventDivRight">
                         <div class="eventDetails">
-                            <a>May 17</a>
-                            <a>The future of CSS</a>
-                            <a>21/06</a>
-                            <a>11:00-13:50</a>
+                            <a>JUNE 18</a>
+                            <a>Self-Service BI: What it is, how it is used and how to implement it</a>
+                            <a>16:00-19:00</a>
                         </div>
                         <div class="pointer">
                             <p onclick="myFunction()">REGISTER</p>
@@ -48,15 +47,33 @@
                 <div id="singleEventDetailsContainerL">
                     <div>
                         <p>Description</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consectetur metus orci, quis blandit risus tristique ac. Phasellus blandit lacus odio, ac congue odio suscipit eget. </p>
+                        <p>Welcome again to an evening of exciting talks on Power BI. Last session it was all about beginners, in this session we will focus on Beginners to Intermediate level. </p>
                     </div>
                     <div>
                         <p>Program</p>
                         <ul>
-                            <li>11:00 - Meet and greet</li>
-                            <li>11:50 - Introduction</li>
-                            <li>12:30 - Guest speaker</li>
-                            <li>13:00 - New practice</li>
+                            <li>17:45 – 18:15 – Welcome mingle</li>
+
+                            <li>18:15 – 18:30 – Introduction talk by PUG Leaders </li>
+
+                            <li>18:30 – 19:00 – What is new in Power BI (latest updates): Power BI New licensing models, Report server, create custom connectors, etc…
+                            </li>
+                            <li>19:00 – 19:30 – Drinks, Food and Networking </li>
+
+                            <li>19:30 – 20:30 – Deep Dive by Tobias Fransson </li>
+
+                            <li>1. Importance of Data Source Quality & Getting to know your data sources </li>
+
+                            <li>2. How to load data from Excel (.xlsx & .xlsm) into Power BI </li>
+
+                            <li>3. The Basics of DAX as it relates to the Case solution presented </li>
+
+                            <li>4. Self-Service BI, What it is, How it is used, How to implement it (demo) </li>
+
+                            <li>19:30 – 20:45 – Discussions around the presentation. </li>
+
+                            <li>20:45 – 21:00 – Wrap up</li>
+                            <li>
                         </ul>
                     </div>
                     <div>
@@ -65,9 +82,6 @@
                     </div>
                 </div>
                 <div id="singleEventDetailsContainerR">
-                    <div>
-                        <button class="btn btn-primary" onclick="addCalender()">Add to calender</button>
-                    </div>
                     <div>
                         <p>Details</p>
                         <ul>
@@ -82,6 +96,9 @@
                         <p>KEA</p>
                         <p>Lygten 37</p>
                         <p>2200 Nørrebro</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="addCalender()">Add to calender</button>
                     </div>
                 </div>
             </div>
@@ -106,21 +123,22 @@
         <?php
         include('footer.php');
     ?>
-    
-    <script>
-        function myFunction(){
-            var x;
-            var name=prompt("Please enter your e-mail adress","");
-            if (name!=null){
-               x="You have made a reservation. An e-mail will be sent to you containing the relevant information";
-              alert(x);
-            }
-        }
-        
-        function addCalender() {
-            window.location.replace("https://calendar.google.com/calendar/render?pli=1#main_7","_blank");
-        }
-    </script>
+
+            <script>
+                function myFunction() {
+                    var x;
+                    var name = prompt("Please enter your e-mail adress", "");
+                    if (name != null) {
+                        x = "You have made a reservation. An e-mail will be sent to you containing the relevant information";
+                        alert(x);
+                    }
+                }
+
+                function addCalender() {
+                    window.location.replace("https://calendar.google.com/calendar/render?pli=1#main_7", "_blank");
+                }
+
+            </script>
 </body>
 
 </html>

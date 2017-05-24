@@ -934,7 +934,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: 14px; }
 
 #imgTwittershare {
@@ -943,7 +943,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: 14px; }
 
 #imgMessenger {
@@ -952,7 +952,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: auto; }
 
 #imgLinkedin {
@@ -961,7 +961,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: auto; }
 
 #imgEmail {
@@ -970,7 +970,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: auto; }
 
 #imgTravelMode {
@@ -979,7 +979,7 @@ button.accordion.active:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
-  width: 100%;
+  width: 70%;
   padding: auto;
   position: fixed;
   position: relative;
@@ -1025,9 +1025,15 @@ button.accordion.active:after {
   align-content: stretch;
   height: 50px;
   width: 100%;
-  background-color: #dddddd;
+  background-color: #00527D;
+  color: #dddddd;
+  font-weight: 900;
   border: white solid 1px;
   border-radius: 5px; }
+
+#eventDivRight div:last-child:hover {
+  background-color: #455a64;
+  color: #dddddd; }
 
 #singleEventDetailsContainer {
   min-height: 200px;
@@ -1041,6 +1047,9 @@ button.accordion.active:after {
 #singleEventDetailsContainerL {
   width: 60%; }
 
+#singleEventDetailsContainerL li {
+  margin-bottom: 10px; }
+
 #singleEventDetailsContainer > div:last-child {
   width: 25%; }
 
@@ -1050,10 +1059,6 @@ button.accordion.active:after {
 #singleEventDetailsContainer ul {
   list-style: none;
   padding: 0; }
-
-#singleEventDetailsContainerR > div:first-child {
-  margin: 16px;
-  text-align: center; }
 
 #singleEventDetailsContainerR > div:last-child p:first-child {
   margin-bottom: 8px; }
@@ -1304,6 +1309,18 @@ footer p {
     display: block;
     text-align: left; } }
 /*******************EVENTS**********************/
+#filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px; }
+  #filter a {
+    text-decoration: none;
+    align-self: center;
+    color: white; }
+    #filter a button {
+      align-self: center;
+      width: 300px; }
+
 #filter h1 {
   margin-top: 0px;
   padding-top: 50px;
@@ -1318,8 +1335,7 @@ footer p {
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-top: 40px; }
 
 /*******************DROP DOWN BUTTONS**********************/
 .cd-dropdown,

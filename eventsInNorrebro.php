@@ -3,35 +3,57 @@
 <html>
 
 <head>
-    <title>Index Page</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in Vesterbrø</title>
     <?php
         include('/imports.html');
     ?>
 </head>
 
 <body>
-
     <?php
-        include('/header.php');
+    include('/header.php');
     ?>
         <div class="main-background">
-            <div class="testDivContainer">
-                <h1>AVAILABLE REGIONS</h1>
-                <div class="content margin-20-auto testDivInnerContainer">
-
-                    <a href="eventsInVesterbro.php" class="testDiv"><span id="imgVesterbro" class="testDiv pointer"></span>
-                    </a>
-                    <a href="eventsInNorrebro.php" class="testDiv"><span id="imgNorrebro" class="testDiv pointer"></span>
-                    </a>
-                    <a href="eventsInOsterbro.php" class="testDiv"><span id="imgOsterbro" class="testDiv pointer"></span>
-                    </a>
-
+            <div id="filter">
+                <h1>PLEASE OPTIMIZE YOUR SEARCH HERE</h1>
+                <div id="filterbuttons">
+                    <select id="cd-dropdown" class="cd-select">
+                        <option value="-1" selected>Categories</option>
+                        <option value="1">Database</option>
+                        <option value="2">UX/UI</option>
+                        <option value="3">Mobile</option>
+                        <option value="4">Software</option>
+                        <option value="5">All</option>
+                        </select>
+                    <select id="cd-dropdown1" class="cd-select">
+                    <option value="-1" selected>Districts</option>
+                    <option value="1">Vesterbro</option>
+                    <option value="2">Nørrebro</option>
+                    <option value="3">Østerbro</option>
+                    <option value="4">Copenhagen</option>
+                    </select>
+                    <select id="cd-dropdown2" class="cd-select">
+                    <option value="-1" selected>Date</option>
+                    <option value="1">Today</option>
+                    <option value="2">This Week</option>
+                    <option value="3">Next Week</option>
+                    <option value="4">This Month</option>
+                    </select>
+                    <select id="cd-dropdown3" class="cd-select">
+                    <option value="-1" selected>Price</option>
+                    <option value="1">Free</option>
+                    <option value="2">Up to 10$</option>
+                    <option value="3">Up to 50$</option>
+                    <option value="4">More than 50$</option>
+                    </select>
                 </div>
+                <a href="eventsInNorrebro.php"><button type="button" id="btnLogin" class="btn btn-primary postBtn">Search</button></a>
             </div>
+
             <div class="testDivContainer">
-                <h1>LIST OF ALL EVENTS IN COPENHAGEN</h1>
+                <h1>LIST OF ALL EVENTS IN NØRREBRO</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">
@@ -44,7 +66,7 @@
                                 <a>Seats available:</a>
                             </div>
                             <div class="eventPreviewDetailsColumnR">
-                                <a>Self-Service BI</a>
+                                <a>PHP Course</a>
                                 <a>18/06</a>
                                 <a>16:00-19:00</a>
                                 <a>48</a>
@@ -182,18 +204,31 @@
             <div class="partnerContainer">
                 <div class="partnerDivInnerContainer">
                     <?php
-                        include('showPartners.php');
-                    ?>
+                include('showPartners.php');
+                ?>
                 </div>
-
             </div>
         </div>
-
         <?php
             include('footer.php');
         ?>
+            <script type="text/javascript">
+                $(function() {
+                    $('#cd-dropdown').dropdown();
+                    $('#cd-dropdown1').dropdown();
+                    $('#cd-dropdown2').dropdown();
+                    $('#cd-dropdown3').dropdown();
 
-            <script>
+                });
+
+                //TESTING FIX FOR DROPDOWNS
+
+                if ($('.cd-dropdown').hasClass('cd-active')) {
+                    this.css('z-index:2000');
+                }
+
+
+
                 $('.delete').click(function() {
                     var elementD = $(this).parent().parent().attr('id');
                     $(this).parent().parent().hide();
@@ -221,7 +256,6 @@
                 }
 
             </script>
-
 
 </body>
 

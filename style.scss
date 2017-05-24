@@ -939,9 +939,16 @@ button.accordion.active:after {
     @include flex($alignI: center, $justify:center);
     height: 50px;
     width: 100%;
-    background-color: $alto;
+    background-color: $primaryColor;
+    color: $alto;
+    font-weight: 900;
     border: white solid 1px;
     border-radius: 5px;
+}
+
+#eventDivRight div:last-child:hover {
+    background-color: $limedSpruce;
+    color: $alto;
 }
 
 #singleEventDetailsContainer {
@@ -951,6 +958,10 @@ button.accordion.active:after {
 
 #singleEventDetailsContainerL {
     width: 60%;
+}
+
+#singleEventDetailsContainerL li {
+    margin-bottom: 10px;
 }
 
 #singleEventDetailsContainer>div:last-child {
@@ -964,11 +975,6 @@ button.accordion.active:after {
 #singleEventDetailsContainer ul {
     list-style: none;
     padding: 0;
-}
-
-#singleEventDetailsContainerR>div:first-child {
-    margin: 16px;
-    text-align: center;
 }
 
 #singleEventDetailsContainerR>div:last-child p:first-child {
@@ -1215,6 +1221,21 @@ footer p {
 
 /*******************EVENTS**********************/
 
+#filter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    a {
+        text-decoration: none;
+        align-self: center;
+        color: white;
+        button {
+            align-self: center;
+            width: 300px;
+        }
+    }
+}
+
 #filter h1 {
     margin-top: 0px;
     padding-top: 50px;
@@ -1226,7 +1247,6 @@ footer p {
 #filterbuttons {
     @include flex($justify: center, $wrap:wrap);
     margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 

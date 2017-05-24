@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Events in Vesterbrø</title>
     <?php
         include('/imports.html');
     ?>
@@ -25,13 +25,14 @@
                         <option value="2">UX/UI</option>
                         <option value="3">Mobile</option>
                         <option value="4">Software</option>
+                        <option value="5">All</option>
                         </select>
                     <select id="cd-dropdown1" class="cd-select">
                     <option value="-1" selected>Districts</option>
                     <option value="1">Vesterbro</option>
                     <option value="2">Nørrebro</option>
                     <option value="3">Østerbro</option>
-                    <option value="4">Valby</option>
+                    <option value="4">Copenhagen</option>
                     </select>
                     <select id="cd-dropdown2" class="cd-select">
                     <option value="-1" selected>Date</option>
@@ -48,10 +49,11 @@
                     <option value="4">More than 50$</option>
                     </select>
                 </div>
+                <a href="eventsInNorrebro.php"><button type="button" id="btnLogin" class="btn btn-primary postBtn">Search</button></a>
             </div>
 
             <div class="testDivContainer">
-                <h1>LIST OF ALL EVENTS</h1>
+                <h1>LIST OF ALL EVENTS IN ØSTERBRO</h1>
                 <div class="content margin-20-auto testDivInnerContainer">
                     <div id="event1" class="eventDiv">
                         <div id="imgBackend" class="eventImg">

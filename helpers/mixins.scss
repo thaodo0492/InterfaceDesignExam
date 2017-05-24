@@ -1,5 +1,6 @@
 /*# sourceMappingURL=mixins.css.map */
 
+
 /* MIXINS FOR MULTIPLE BROWSER SUPPORT */
 
 @mixin user-select($option) {
@@ -13,7 +14,7 @@
     cursor: default;
 }
 
-@mixin perspective($value){
+@mixin perspective($value) {
     -webkit-perspective: $value;
     -moz-perspective: $value;
     -o-perspective: $value;
@@ -21,7 +22,7 @@
     perspective: $value;
 }
 
-@mixin transform-style($option){
+@mixin transform-style($option) {
     -webkit-transform-style: $option;
     -moz-transform-style: $option;
     -o-transform-style: $option;
@@ -29,7 +30,7 @@
     transform-style: $option;
 }
 
-@mixin transform-origin($value){
+@mixin transform-origin($value) {
     -webkit-transform-origin: $value;
     -moz-transform-origin: $value;
     -o-transform-origin: $value;
@@ -37,7 +38,7 @@
     transform-origin: $value;
 }
 
-@mixin transform-rotateX($value){
+@mixin transform-rotateX($value) {
     -webkit-transform: rotateX($value);
     -moz-transform: rotateX($value);
     -o-transform: rotateX($value);
@@ -45,7 +46,7 @@
     transform: rotateX($value);
 }
 
-@mixin transitionTransform($time){
+@mixin transitionTransform($time) {
     -webkit-transition: -webkit-transform $time;
     -moz-transition: -moz-transform $time;
     -o-transition: -o-transform $time;
@@ -53,7 +54,7 @@
     transition: transform $time;
 }
 
-@mixin transition($value){
+@mixin transition($value) {
     -webkit-transition: $value;
     -moz-transition: $value;
     -ms-transition: $value;
@@ -62,35 +63,32 @@
 }
 
 
-
-
 /*----- IMAGE MIXINS ------*/
 
-
-@mixin imgMediaShare($imgName, $bgSize, $padding){
+@mixin imgMediaShare($imgName, $bgSize, $padding) {
     background: url(images/$imgName);
     background-size: $bgSize;
     background-repeat: no-repeat;
     background-position: center;
     height: 50px;
-    width: 100%;
+    width: 70%;
     padding: $padding;
 }
 
-@mixin partnerImg($imgName){
+@mixin partnerImg($imgName) {
     background: url(images/$imgName);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-@mixin imgCoverCenter($imgName){
-      background: url(images/$imgName);
-      background-size: cover;
-      background-position: center;
+@mixin imgCoverCenter($imgName) {
+    background: url(images/$imgName);
+    background-size: cover;
+    background-position: center;
 }
 
-@mixin imgContainCenter($imgName){
+@mixin imgContainCenter($imgName) {
     background: url(images/$imgName);
     background-size: contain;
     background-repeat: no-repeat;
@@ -99,16 +97,16 @@
 }
 
 
-
-
 /*----- FLEX CREATION SUPER MIXIN -----*/
 
-@mixin flex($dir: row,$wrap: nowrap,$justify: flex-start,$alignI: stretch,$alignC: stretch){
-      display:flex;
-      flex-direction: $dir;
-      flex-wrap: $wrap;
-      justify-content: $justify;
-      align-items: $alignI;
-      align-content: $alignC;
+@mixin flex($dir: row, $wrap: nowrap, $justify: flex-start, $alignI: stretch, $alignC: stretch) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $alignI;
+    align-content: $alignC;
 }
+
+
 /* flex( direction, wrap, justify, alignItem, alignContent)*/

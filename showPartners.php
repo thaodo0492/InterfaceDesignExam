@@ -1,5 +1,5 @@
 <div id="partnerPDiv">
-    <h1 class="disable-select">PREMIUM PARTNERS</h1>
+    <h1>PREMIUM PARTNERS</h1>
     <div class="content bg">
         <div id="partnerDanskebank" class="partnerIconP">
             <?php
@@ -53,7 +53,7 @@
     </div>
 </div>
 <div id="partnerDiv">
-    <h1 class="disable-select">OTHER PARTNERS</h1>
+    <h1>OTHER PARTNERS</h1>
     <div class="content bg">
         <div id="partnerBP" class="partnerIcon">
             <?php
@@ -88,13 +88,13 @@
     </div>
 </div>
 <script>
-    $('.deleteP').click(function(){
+    $('.deleteP').click(function() {
         var elementD = $(this).parent().attr('id');
         $(this).parent().hide();
         localStorage.setItem(elementD, "hide");
     });
     //localStorage.getItem("delete");
-    
+
     if (localStorage.getItem("partnerDanskebank") !== null) {
         $('#partnerDanskebank').hide();
     }
@@ -122,9 +122,9 @@
     if (localStorage.getItem("partnerTru") !== null) {
         $('#partnerTru').hide();
     }
-    
-    
-    
+
+
+
     if (localStorage.getItem("partnerLogitech") !== null) {
         $('#partnerLogitech').hide();
     }
@@ -141,7 +141,8 @@
         $('#partnerPi').hide();
     }
 
-    
+
     //$('#partnerElgiganten').hide();
-                //$('#partnerElgiganten').parent().hide();
+    //$('#partnerElgiganten').parent().hide();
+
 </script>
