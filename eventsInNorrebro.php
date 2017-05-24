@@ -75,7 +75,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>
@@ -123,7 +123,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>
@@ -147,7 +147,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>
@@ -171,7 +171,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>
@@ -195,7 +195,7 @@
                         </div>
                         <?php
                         if(isset($_SESSION["loggedIn"])){
-                            echo"<div class='deleteE'><button type='button''>&#x2710;</button><button class='delete' type='button'>&#x2612;</button></div>";
+                            echo"<div class='deleteE'><a href='editEvent.php'><button type='button''>&#x2710;</button></a><button class='delete' type='button'>&#x2612;</button></div>";
                             }
                         ?>
                     </div>

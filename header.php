@@ -12,9 +12,9 @@
                 <a href="javascript:void(0);" class="icon" onclick="TopnavOpen()">&#9776;</a>
             </div>
             <div>
-                <img class="m-sides-8 pointer" src="images/FB50.png" alt="facebook logo" height="25" width="auto">
-                <img class="m-sides-8 pointer" src="images/Twitter400.png" alt="twitter logo" height="25" width="auto">
-                <img class="m-sides-8 pointer" src="images/Instagram500.png" alt="instagram logo" height="25" width="auto" style="background-color: whitesmoke; border-radius: 5px;">
+                <a href="https://www.facebook.com/" target="_blank"><img class="m-sides-8 pointer" src="images/FB50.png" alt="facebook logo" height="25" width="auto"></a>
+                <a href="https://twitter.com/" target="_blank"><img class="m-sides-8 pointer" src="images/Twitter400.png" alt="twitter logo" height="25" width="auto"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="m-sides-8 pointer" src="images/Instagram500.png" alt="instagram logo" height="25" width="auto" style="background-color: whitesmoke; border-radius: 5px;"></a>
             </div>
         </div>
     </div>
