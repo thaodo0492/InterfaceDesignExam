@@ -762,10 +762,10 @@ button.accordion.active:after {
   margin-left: 20px;
   margin-right: 20px;
   padding: 10px; }
-  .partnerIconP button {
+  .partnerIconP button,
+  .partnerIconP a {
     height: 30px;
     align-self: flex-end;
-    margin-left: 15px;
     margin-right: 15px; }
 
 .partnerIcon {
@@ -774,10 +774,10 @@ button.accordion.active:after {
   margin-left: 40px;
   margin-right: 40px;
   padding: 10px; }
-  .partnerIcon button {
+  .partnerIcon button,
+  .partnerIcon a {
     height: 30px;
     align-self: flex-end;
-    margin-left: 5px;
     margin-right: 5px; }
 
 .deleteE {
