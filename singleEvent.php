@@ -106,7 +106,9 @@
                 <div id="map">
                     <h1>FIND YOUR WAY TO US</h1>
                     <iframe width="1200" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDThtVQncVO-lgLbScuMNTThJzKKL_Ekyo&origin=Nørreport&destination=Lygten+37&avoid=tolls|highways" allowfullscreen></iframe>
-                    <div id="imgTravelMode" class="testDiv pointer"></div>
+                    <a style="display:block" target="_blank" href="https://www.google.dk/maps/dir///@55.7038615,12.5235968,15z?hl=en">
+                        <div id="imgTravelMode" class="testDiv pointer"></div>
+                    </a>
                 </div>
             </div>
 
