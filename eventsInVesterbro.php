@@ -49,7 +49,7 @@
                     <option value="4">More than 50$</option>
                     </select>
                 </div>
-                <a href="eventsInNorrebro.php"><button type="button" id="btnLogin" class="btn btn-primary postBtn">Search</button></a>
+                <a href="eventsInNorrebro.php"><button type="button" id="btnLogin" class="btn btn-primary pointer postBtn">Search</button></a>
             </div>
 
             <div class="testDivContainer">

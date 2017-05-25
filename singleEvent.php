@@ -37,7 +37,7 @@
                             <a>16:00-19:00</a>
                         </div>
                         <div class="pointer">
-                            <p onclick="myFunction()">REGISTER</p>
+                            <p style="color: white;" onclick="myFunction()">REGISTER</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                         <p>2200 Nørrebro</p>
                     </div>
                     <div>
-                        <button class="btn btn-primary" onclick="addCalender()">Add to calender</button>
+                        <button class="btn btn-primary pointer" onclick="addCalender()">Add to calender</button>
                     </div>
                 </div>
             </div>
