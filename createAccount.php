@@ -24,7 +24,7 @@
             Password: <input type="text" id="password" name="lname"><br>
             <p id="checkInfo">Send info to employee e-mail <input type="checkbox" value="Bike"></p>
             <!-- <input type="submit" value="Submit">-->
-            <button type="button" onclick="store()" id="btnSubmit" class="btn btn-primary postBtn">Submit</button>
+            <button type="button" onclick="store()" id="btnSubmit" class="btn btn-primary postBtn pointer">Submit</button>
         </form>
 
         <script>

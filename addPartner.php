@@ -19,7 +19,7 @@
             <div>
                 <form id="formAddAccount" action="" method="post" enctype="multipart/form-data">
                     Partner: <input type="text" name="fname"><br> Description: <input type="text" name="lname"><br> E-mail: <input type="text" name="lname"><br> Logo <input type="file" name="fileToUpload" id="fileToUpload"><br> Phone: <input type="text" name="lname"><br>
-                    <button type="button" id="btnSubmit" class="btn btn-primary postBtn">Submit</button>
+                    <button type="button" id="btnSubmit" class="btn btn-primary postBtn pointer">Submit</button>
                 </form>
             </div>
     </div>

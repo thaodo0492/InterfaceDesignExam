@@ -38,7 +38,7 @@
                 <p id="priceP">Price: <input type="text" id="eventPrice" name="lname"><br></p>
                 Tickets available: <input type="text" name="lname"><br> Details: <input type="text" name="lname"><br>
                 <br>
-                <input type="submit" value="Submit" class="btn btn-primary">
+                <input type="submit" value="Submit" class="btn btn-primary pointer">
             </form>
         </div>
         <?php

@@ -25,7 +25,7 @@
                     <h5 id="infoLabelUser" class="infoLabel">PASSWORD</h5>
                     <input id="passInput" autocorrect="off" autocapitalize="off" autocomplete="off" class="loginInputLoginpage" type="password" name="txLoginFormPassword">
                     <h5 id="errorLabelPass" class="errorLabel"></h5>
-                    <button type="button" id="btnLogin" class="btn btn-primary postBtn">Login</button>
+                    <button type="button" id="btnLogin" class="btn btn-primary postBtn pointer">Login</button>
                     <h5 id="LoginLabel" class="errorLabel bottomLabel"></h5>
                 </div>
 

@@ -3,51 +3,51 @@
     <div class="content bg">
         <div id="partnerDanskebank" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";
                     
                 }
             ?>
         </div>
         <div id="partnerElgiganten" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";
                 
                 }
             ?>
         </div>
         <div id="partnerNovo" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerRadio" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerRadis" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerMicro" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerOti" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerGra" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerTru" class="partnerIconP">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
     </div>
@@ -57,32 +57,32 @@
     <div class="content bg">
         <div id="partnerBP" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerLogitech" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerMicrosoft" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerBP" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerSe" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
         <div id="partnerPi" class="partnerIcon">
             <?php
-                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><a href='singlePartner.php'><button class='deleteP' type='button'>&#x2612;</button></a>";}
+                if(isset($_SESSION["loggedIn"])){echo"<a href='singlePartner.php'><button type='button''>&#x2710;</button></a><button class='deleteP' type='button'>&#x2612;</button>";}
             ?>
         </div>
     </div>
