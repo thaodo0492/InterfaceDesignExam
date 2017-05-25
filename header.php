@@ -1,14 +1,42 @@
 <?php
     session_start();
+    $url = $_SERVER['REQUEST_URI'];
 ?>
     <div class="topnavContainer p-sides-50">
         <div class="topnavInnerContainer">
             <div class="topnav" id="myTopnav">
                 <a href="index.php" id="navLogo"><img class="pointer" src="images/LogoInverted.svg" alt="facebook logo" height="30" width="auto"></a>
-                <a href="index.php">Events</a>
-                <a href="partners.php">Partners</a>
-                <a href="about.php">About</a>
-                <a href="faq.php">FAQ</a>
+                
+                <?php
+                if (strpos($url,'events')) {
+                    echo "<a href='index.php' style='background-color: white; color: black;'>Events</a>";
+                    
+                }else{
+                    echo "<a href='index.php'>Events</a>";
+                }
+                
+                
+                if (strpos($url,'partners')) {
+                    echo "<a href='partners.php' style='background-color: white; color: black;'>Partners</a>";
+                    
+                }else{
+                    echo "<a href='partners.php'>Partners</a>";
+                }
+                
+                if (strpos($url,'about')) {
+                    echo "<a href='about.php' style='background-color: white; color: black;'>About</a>";
+                    
+                }else{
+                    echo "<a href='about.php'>About</a>";
+                }
+                
+                if (strpos($url,'faq')) {
+                    echo "<a href='faq.php' style='background-color: white; color: black;'>FAQ</a>";
+                    
+                }else{
+                    echo "<a href='faq.php'>FAQ</a>";
+                }
+                ?>
                 <a href="javascript:void(0);" class="icon" onclick="TopnavOpen()">&#9776;</a>
             </div>
             <div>
