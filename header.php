@@ -9,7 +9,7 @@
                 
                 <?php
                 if (strpos($url,'events')) {
-                    echo "<a href='index.php' style='background-color: white; color: black;'>Events</a>";
+                    echo "<a href='index.php' style='background-color: #f6f6f6; color: black;'>Events</a>";
                     
                 }else{
                     echo "<a href='index.php'>Events</a>";
@@ -17,21 +17,21 @@
                 
                 
                 if (strpos($url,'partners')) {
-                    echo "<a href='partners.php' style='background-color: white; color: black;'>Partners</a>";
+                    echo "<a href='partners.php' style='background-color: #f6f6f6; color: black;'>Partners</a>";
                     
                 }else{
                     echo "<a href='partners.php'>Partners</a>";
                 }
                 
                 if (strpos($url,'about')) {
-                    echo "<a href='about.php' style='background-color: white; color: black;'>About</a>";
+                    echo "<a href='about.php' style='background-color: #f6f6f6; color: black;'>About</a>";
                     
                 }else{
                     echo "<a href='about.php'>About</a>";
                 }
                 
                 if (strpos($url,'faq')) {
-                    echo "<a href='faq.php' style='background-color: white; color: black;'>FAQ</a>";
+                    echo "<a href='faq.php' style='background-color: #f6f6f6; color: black;'>FAQ</a>";
                     
                 }else{
                     echo "<a href='faq.php'>FAQ</a>";
